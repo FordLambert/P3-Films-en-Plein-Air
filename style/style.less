@@ -1,0 +1,68 @@
+/*Variables declaration*/
+
+@small-default-font: 8px;
+@medium-default-font: 14px;
+@large-default-font: 16px; /*Size based on Google advise*/
+   
+@huge-title-font: 700%;
+
+/* Colors ! Everywhere ! */
+@main-background-color: #2580a6;
+
+
+
+
+
+/* Utilisation */
+body {
+	/*font-size: @defaut-font;
+	 /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+    	font-size: @small-default-font;
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    	font-size: @small-default-font;
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    	font-size: @medium-default-font;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    	font-size: @large-default-font;
+    }
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    	font-size: @large-default-font;
+    }
+	line-height: 1.2;
+}
+header {
+	height: 100vh;
+	background-color: @main-background-color;
+	a {
+		color: white;
+	}
+
+	nav {
+		border-bottom: 1px solid white;
+		.main-logo {
+			height: 15vh;
+			margin-top: 10px;
+			margin-bottom: -34px;
+		}
+	}
+}
+.title-box {
+	margin-top: 35vh;
+	h1 {
+		font-size: @huge-title-font;
+	}
+}
+
+
+
