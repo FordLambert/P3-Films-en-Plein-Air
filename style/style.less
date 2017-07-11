@@ -1,82 +1,108 @@
 /*Variables declaration*/
+@default-font-size: 16px; /*Size based on Google advise*/
 
-@small-default-font: 8px;
-@medium-default-font: 14px;
-@large-default-font: 16px; /*Size based on Google advise*/
-   
-@huge-title-font: 700%;
+@small-title-font: 300%;
+@medium-title-font: 500%;  
+@large-title-font: 700%;
 
 /* Colors ! Everywhere ! */
 @main-background-color: #2580a6;
+@light-grey: #bbc8ce;
 
 
-/* CSS itself */
+/* Full page is concerned */
 body {
-	 /* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
-    	font-size: @small-default-font;
-    }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-    	font-size: @small-default-font;
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-    	font-size: @medium-default-font;
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-    	font-size: @large-default-font;
-    }
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-    	font-size: @large-default-font;
-    }
+    font-size: @default-font-size;
 	line-height: 1.2;
+	font-family: 'Fjalla One', sans-serif;
 }
 .container-fluid {
 	padding: 0px;
 }
+
+/* Header - navbar and first section */
 .header-box {
 		padding-right: 0px;
 		padding-left: 0px;
+		border-bottom: 3px solid @light-grey;
 	}
 header {
-	height: 100vh;
+	height: 98vh;
 	background-image: url(../pictures/cinema.jpg);
-	background-size: 100%;
+	background-size: 200vh;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	a {
 		color: white;
 	}
 	nav {
-		background-color: transparent;
+		background-color: rgba(0, 0, 0, 0.3);
 		.main-logo {
 			position: absolute;
 			height: 100px;
 			bottom: -25px;
-			left: 5px;
+			left: 15px;
 		}
 		li {
 			margin-top: 15px;
 		}
 	}
 }
-.navbar-inverse, .navbar{
-	background-color: rgba(0, 0, 0, 0);
+.navbar-inverse, .navbar, .navbar-header {
+	background-color: rgba(0, 0, 0, 0.3);
 	height: 80px;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid @light-grey;
 	border-radius: 0px;
+}
+@media only screen and (max-width : 768px) {
+	.collapse, .navbar-collapse {
+		background-color: rgba(0, 0, 0, 0.9);
+	}
 }
 .title-box {
 	margin-top: 35vh;
 	h1 {
-		font-size: @huge-title-font;
+			/* Custom, iPhone Retina */ 
+	    @media only screen and (min-width : 250px) {
+	    	font-size: @small-title-font;
+	    }
+
+	    /* Extra Small Devices, Phones */ 
+	    @media only screen and (min-width : 480px) {
+	    	font-size: @small-title-font;
+	    }
+
+	    /* Small Devices, Tablets */
+	    @media only screen and (min-width : 768px) {
+	    	font-size: @medium-title-font;
+	    }
+
+	    /* Medium Devices, Desktops */
+	    @media only screen and (min-width : 992px) {
+	    	font-size: @large-title-font;
+	    }
+	    /* Large Devices, Wide Screens */
+	    @media only screen and (min-width : 1200px) {
+	    	font-size: @large-title-font;
+	    }
+	}
+	h1, h2 {
 		color: white;
+		text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	}
+
+}
+/* Section 2 - The Festival */
+.festival-section {
+	height: 50vh;
+	background-color: #2580A6;
+
+	.glyphicon-menu-down {
+		background-color: @light-grey;
+		border: 1px solid black;
+		font-size: 2em;
+		padding: 5px;
+		top: -25px;
 	}
 }
-
-
 
