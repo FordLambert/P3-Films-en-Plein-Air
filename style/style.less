@@ -4,39 +4,54 @@
 @small-title-font: 300%;
 @medium-title-font: 500%;  
 @large-title-font: 700%;
+@button-default-font: 120%;
+
+@custom-font: 'Fjalla One';
 
 /* Colors ! Everywhere ! */
 @main-background-color: #2580a6;
-@light-grey: #bbc8ce;
+@darker-main-color: #227091;
+@light-grey: #bbc8ce; /* This is mainly for borders and glyphicons */
+@default-text-color: #fcfeff;
+@light-transparency: rgba(0, 0, 0, 0.3);
+@darker-transparency: rgba(0, 0, 0, 0.9);
+@shadow-for-readable-letters: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 
 
-/* Full page is concerned */
+/*----- Full page is concerned -----*/
 body {
     font-size: @default-font-size;
 	line-height: 1.2;
-	font-family: 'Fjalla One', sans-serif;
+	font-family: @custom-font, sans-serif;
 }
 .container-fluid {
 	padding: 0px;
 }
+.btn-primary {
+	background-color: @main-background-color;
+	margin-top: 25px;
+	font-size: @button-default-font;
+}
+.btn-primary:hover {
+	background-color: @darker-main-color;
+}
 
-/* Header - navbar and first section */
+/*----- Header - navbar and first section -----*/
 .header-box {
-		padding-right: 0px;
-		padding-left: 0px;
-		border-bottom: 3px solid @light-grey;
-	}
+	padding-right: 0px;
+	padding-left: 0px;
+	border-bottom: 3px solid @light-grey;
+}
 header {
 	height: 98vh;
 	background-image: url(../pictures/cinema.jpg);
-	background-size: 200vh;
+	background-size: 230vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	a {
-		color: white;
+		color: @default-text-color;
 	}
 	nav {
-		background-color: rgba(0, 0, 0, 0.3);
 		.main-logo {
 			position: absolute;
 			height: 100px;
@@ -47,52 +62,40 @@ header {
 			margin-top: 15px;
 		}
 	}
+	.title-box {
+		margin-top: 35vh;
+		h1 {
+		    @media only screen and (min-width : 250px) {
+		    	font-size: @small-title-font;
+		    }
+		    @media only screen and (min-width : 768px) {
+		    	font-size: @medium-title-font;
+		    }
+		    @media only screen and (min-width : 992px) {
+		    	font-size: @large-title-font;
+		    } 
+		}
+		h1, h2 {
+			color: white;
+			text-shadow: @shadow-for-readable-letters;
+		}
+	}
 }
+/* Bootstrap collapsing navbar has some cumulatives rules so I made the following */
 .navbar-inverse, .navbar, .navbar-header {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: @light-transparency;
 	height: 80px;
 	border-bottom: 1px solid @light-grey;
 	border-radius: 0px;
 }
 @media only screen and (max-width : 768px) {
 	.collapse, .navbar-collapse {
-		background-color: rgba(0, 0, 0, 0.9);
-	}
-}
-.title-box {
-	margin-top: 35vh;
-	h1 {
-			/* Custom, iPhone Retina */ 
-	    @media only screen and (min-width : 250px) {
-	    	font-size: @small-title-font;
-	    }
-
-	    /* Extra Small Devices, Phones */ 
-	    @media only screen and (min-width : 480px) {
-	    	font-size: @small-title-font;
-	    }
-
-	    /* Small Devices, Tablets */
-	    @media only screen and (min-width : 768px) {
-	    	font-size: @medium-title-font;
-	    }
-
-	    /* Medium Devices, Desktops */
-	    @media only screen and (min-width : 992px) {
-	    	font-size: @large-title-font;
-	    }
-	    /* Large Devices, Wide Screens */
-	    @media only screen and (min-width : 1200px) {
-	    	font-size: @large-title-font;
-	    }
-	}
-	h1, h2 {
-		color: white;
-		text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+		background-color: @darker-transparency;
 	}
 
 }
-/* Section 2 - The Festival */
+
+/*----- Section 2 - The Festival -----*/
 .festival-section {
 	height: 50vh;
 	background-color: #2580A6;
