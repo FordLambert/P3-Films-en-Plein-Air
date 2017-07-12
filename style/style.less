@@ -5,6 +5,7 @@
 @medium-title-font: 500%;  
 @large-title-font: 700%;
 @button-default-font: 120%;
+@bigger-glyph: 2em;
 
 @custom-font: 'Fjalla One';
 
@@ -32,6 +33,10 @@ body {
 	background-color: @main-background-color;
 	margin-top: 25px;
 	font-size: @button-default-font;
+	border: 1px solid black;
+	a {
+		color: white;
+	}
 }
 .btn-primary:hover {
 	background-color: @darker-main-color;
@@ -111,7 +116,7 @@ header {
 	.glyphicon-menu-down {
 		background-color: @light-grey;
 		border: 1px solid black;
-		font-size: 2em;
+		font-size: @bigger-glyph;
 		padding: 5px;
 		top: -25px;
 	}
@@ -161,5 +166,18 @@ header {
 	}
 	h4, p {
 		margin-bottom: 5vh;
+	}
+}
+
+/*----- Section 5 Contact -----*/
+.contact-section {
+	background-color: @main-background-color;
+	.glyphicon-envelope {
+		font-size: @bigger-glyph;
+		color: white;
+	}
+	.row {
+		padding-top: 10vh;
+		padding-bottom: 10vh;
 	}
 }
