@@ -35,6 +35,9 @@ body {
 .btn-primary:hover {
 	background-color: @darker-main-color;
 }
+h1, h2, h3 {
+	color: white;
+}
 
 /*----- Header - navbar and first section -----*/
 .header-box {
@@ -76,7 +79,6 @@ header {
 		    } 
 		}
 		h1, h2 {
-			color: white;
 			text-shadow: @shadow-for-readable-letters;
 		}
 	}
@@ -103,7 +105,6 @@ header {
 
 /*----- Section 2 - The Festival -----*/
 .festival-section {
-	height: 50vh;
 	background-color: #2580A6;
 
 	.glyphicon-menu-down {
@@ -113,5 +114,28 @@ header {
 		padding: 5px;
 		top: -25px;
 	}
+	.columns {
+		margin-top: 100px;
+	}
+	.column {
+		margin-bottom: 45px;
+	}
 }
 
+/*----- Section 3 The movies -----*/
+.four-views-section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	margin: 0px;
+	p {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+}
+.test {
+	width: 33.333vw;
+}
+.picture-test {
+	width: 33.333vw;
+}
