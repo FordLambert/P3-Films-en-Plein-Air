@@ -17,6 +17,7 @@
 @light-transparency: rgba(0, 0, 0, 0.3);
 @darker-transparency: rgba(0, 0, 0, 0.9);
 @shadow-for-readable-letters: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+@white: white;
 
 
 /*----- Full page is concerned -----*/
@@ -35,14 +36,14 @@ body {
 	font-size: @button-default-font;
 	border: 1px solid black;
 	a {
-		color: white;
+		color: @white;
 	}
 }
 .btn-primary:hover {
 	background-color: @darker-main-color;
 }
 h1, h2, h3 {
-	color: white;
+	color: @white;
 }
 
 /*----- Header - navbar and first section -----*/
@@ -108,6 +109,9 @@ header {
 	}
 
 }
+.affix {
+	background-color: black;
+}
 
 /*----- Section 2 - The Festival -----*/
 .festival-section {
@@ -138,7 +142,7 @@ header {
 	p {
 		margin-top: 25px;
 		margin-bottom: 25px;
-		color: white;
+		color: @white;
 	}
 }
 .carousel-picture {
@@ -150,7 +154,7 @@ header {
 
 /*----- Section 4 The news -----*/
 .blog-section {
-	background-color: white;
+	background-color: @white;
 	h3 {
 		color: black;
 		font-size: 200%;
@@ -174,10 +178,15 @@ header {
 	background-color: @main-background-color;
 	.glyphicon-envelope {
 		font-size: @bigger-glyph;
-		color: white;
+		color: @white;
 	}
 	.row {
 		padding-top: 10vh;
 		padding-bottom: 10vh;
 	}
+}
+
+/*----- Section 6 Partners -----*/
+.partners-section {
+	background-color: @white;
 }
