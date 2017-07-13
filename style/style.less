@@ -12,12 +12,12 @@
 /* Colors ! Everywhere ! */
 @main-background-color: #2580a6;
 @darker-main-color: #227091;
+@black: black;
 @light-grey: #bbc8ce; /* This is mainly for borders and glyphicons */
 @default-text-color: #fcfeff;
 @light-transparency: rgba(0, 0, 0, 0.3);
 @darker-transparency: rgba(0, 0, 0, 0.9);
 @shadow-for-readable-letters: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-@white: white;
 
 
 /*----- Full page is concerned -----*/
@@ -34,16 +34,16 @@ body {
 	background-color: @main-background-color;
 	margin-top: 25px;
 	font-size: @button-default-font;
-	border: 1px solid black;
+	border: 1px solid @black;
 	a {
-		color: @white;
+		color: @default-text-color;
 	}
 }
 .btn-primary:hover {
 	background-color: @darker-main-color;
 }
 h1, h2, h3 {
-	color: @white;
+	color: @default-text-color;
 }
 
 /*----- Header - navbar and first section -----*/
@@ -110,7 +110,7 @@ header {
 
 }
 .affix {
-	background-color: black;
+	background-color: @black;
 }
 
 /*----- Section 2 - The Festival -----*/
@@ -119,7 +119,7 @@ header {
 
 	.glyphicon-menu-down {
 		background-color: @light-grey;
-		border: 1px solid black;
+		border: 1px solid @black;
 		font-size: @bigger-glyph;
 		padding: 5px;
 		top: -25px;
@@ -142,7 +142,7 @@ header {
 	p {
 		margin-top: 25px;
 		margin-bottom: 25px;
-		color: @white;
+		color: @default-text-color;
 	}
 }
 .carousel-picture {
@@ -154,9 +154,9 @@ header {
 
 /*----- Section 4 The news -----*/
 .blog-section {
-	background-color: @white;
+	background-color: @default-text-color;
 	h3 {
-		color: black;
+		color: @black;
 		font-size: 200%;
 		margin: 10vh;
 	}
@@ -178,7 +178,7 @@ header {
 	background-color: @main-background-color;
 	.glyphicon-envelope {
 		font-size: @bigger-glyph;
-		color: @white;
+		color: @default-text-color;
 	}
 	.row {
 		padding-top: 10vh;
@@ -188,5 +188,25 @@ header {
 
 /*----- Section 6 Partners -----*/
 .partners-section {
-	background-color: @white;
+	background-color: @default-text-color;
+	h3 {
+		color: @black;
+	}
+}
+
+/* ----- Footer ----- */
+
+footer {
+	background-color: @black;
+	height: 25vh;
+	.footer-section {
+		padding-top: 8vh;
+		ul {
+			list-style-type: none;
+		}
+		img {
+			height: 100px;
+			width: 130px;
+		}
+	}
 }

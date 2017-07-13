@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Les Films de Plein Air</title>
+		<meta name="description" content="Venez mélanger plein air et cinéma au festival de films en plein air de Nantes !">
 		<link rel="shortcut icon" type="image/x-icon" href="pictures/logo.png" />
       	<link rel="apple-touch-icon" href="pictures/logo.png"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -15,13 +16,12 @@
     	 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     	 crossorigin="anonymous"></script>
 		<script src="js/less.min.js" type="text/javascript"></script>
-		<script src="js/customJS.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div class="container-fluid">
 
 			<header class="col-xs-12 text-center header-box">
-				<nav class="navbar navbar-inverse navbar-fixed-top navbar-center" role="navigation" data-spy="affix" data-offset-top="100">
+				<nav class="navbar navbar-inverse navbar-fixed-top navbar-center" role="navigation" data-spy="affix" data-offset-top="200">
 				  <div class="navbar-header">
 				  	<a href="#"><img src="pictures/logo.png" alt="logo-festival" class="main-logo pull-left"></a>   
 				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,7 +46,7 @@
 					<button class="btn btn-primary"><a href="#">Découvrir le festival</a></button>
 				</div>
 			</header>
-
+			<!--First section - About the festival-->
 			<section class="row">
 				<div class="col-xs-12 text-center festival-section">
 					<span class="glyphicon glyphicon-menu-down img-circle"></span>
@@ -75,7 +75,7 @@
 					</div>
 				</div>
 			</section>
-
+			<!--Second section - About the movies-->
 			<section class="row">
 				<!-- Three pictures grid appears on md and larger only-->
 				<div class="col-md-12 four-views-section text-center hidden-sm hidden-xs">
@@ -124,7 +124,7 @@
 					</div>
 				</div>
 			</section>
-
+			<!--Third section - About the news-->
 			<section class="row blog-section">
 				<div class="col-xs-offset-1 col-xs-10 text-center">
 					<h3>Actualités du festival</h3>
@@ -157,7 +157,7 @@
 					</div>
 				</div>
 			</section>
-
+			<!--Fourth section - redirecting to contact page -->
 			<section class="contact-section text-center">
 				<div class="row">
 					<div class="col-sm-offset-2 col-sm-4">
@@ -170,13 +170,25 @@
 					</div>
 				</div>
 			</section>
-
+			<!--Fifth section - About the news-->
 			<section class="partners-section text-center">
 				<h3>Nos partenaires</h3>
 			</section>
 
-			<footer>
-				
+			<footer class="row text-center">
+				<div class="col-xs-offset-2 col-xs-8 footer-section">
+					<div class="col-xs-6">
+						<img src="pictures/logo.png" alt="logo" class="col-xs-6">
+						<h3 class="col-md-6 hidden-xs hidden-sm">Films en plein air</h3>
+					</div>
+					<ul class="col-xs-6">
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#">Le Festival</a></li>
+						<li><a href="#">Programmation</a></li>
+						<li><a href="#">Actualités</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
 			</footer>
 		</div><!--End of Bootsrap page container-->
 	</body>
