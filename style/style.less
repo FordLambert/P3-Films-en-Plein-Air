@@ -26,24 +26,24 @@ body {
 	line-height: 1.2;
 	font-family: @custom-font, sans-serif;
 	background-color: @darker-transparency;
-}
-.container-fluid {
+	.container-fluid {
 	padding: 0px;
-}
-.btn-primary {
-	background-color: @main-background-color;
-	margin-top: 25px;
-	font-size: @button-default-font;
-	border: 1px solid @black;
-	a {
+	}
+	.btn-primary {
+		background-color: @main-background-color;
+		margin-top: 25px;
+		font-size: @button-default-font;
+		border: 1px solid @black;
+		a {
+			color: @default-text-color;
+		}
+	}
+	.btn-primary:hover {
+		background-color: @darker-main-color;
+	}
+	h1, h2, h3 {
 		color: @default-text-color;
 	}
-}
-.btn-primary:hover {
-	background-color: @darker-main-color;
-}
-h1, h2, h3 {
-	color: @default-text-color;
 }
 
 /*----- Header - navbar and first section -----*/
@@ -190,12 +190,21 @@ header {
 .partners-section {
 	background-color: @default-text-color;
 	h3 {
+		padding-top: 6vh;
+		padding-bottom: 10vh;
 		color: @black;
+	}
+	h4 {
+		color: @main-background-color;
+	}
+	.legend-box {
+		margin-top: -35px;
+		padding-bottom: 8vh;
+		background-color: white;
 	}
 }
 
 /* ----- Footer ----- */
-
 footer {
 	background-color: @black;
 	height: 25vh;
