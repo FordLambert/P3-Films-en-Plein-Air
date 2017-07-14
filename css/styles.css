@@ -6733,10 +6733,11 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .btn-primary {
-  background-color: #2580a6;
+  background-color: white;
   margin-top: 25px;
   font-size: 120%;
   border: 1px solid black;
+  color: #2580a6;
 }
 .btn-primary a {
   color: #fcfeff;
@@ -6841,22 +6842,26 @@ footer .footer-section img {
   width: 130px;
 }
 /* pages itself */
+.container-fluid {
+  padding: 0px;
+}
 /*----- Section 2 - The Festival -----*/
 .festival-section {
   background-color: #2580A6;
+  padding-bottom: 6vh;
 }
 .festival-section .glyphicon-menu-down {
   background-color: #bbc8ce;
   border: 1px solid black;
-  font-size: 2em;
+  font-size: 1.6em;
   padding: 5px;
-  top: -25px;
+  top: -20px;
 }
 .festival-section .columns {
   margin-top: 100px;
 }
 .festival-section .column {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 /*----- Section 3 The movies -----*/
 .four-views-section {
@@ -6904,12 +6909,15 @@ footer .footer-section img {
   background-color: #2580a6;
 }
 .contact-section .glyphicon-envelope {
-  font-size: 2em;
   color: #fcfeff;
+  padding-top: 10px;
 }
 .contact-section .row {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.contact-section p {
+  padding-top: 35px;
 }
 /*----- Section 6 Partners -----*/
 .partners-section {
