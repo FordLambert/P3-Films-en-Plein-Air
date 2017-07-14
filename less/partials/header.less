@@ -1,0 +1,66 @@
+/*----- Header - navbar and first section -----*/
+.header-box {
+	padding-right: 0px;
+	padding-left: 0px;
+	border-bottom: 3px solid @light-grey;
+}
+header {
+	height: 98vh;
+	background-image: url(../pictures/cinema.jpg);
+	background-size: 230vh;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	a {
+		color: @default-text-color;
+	}
+	nav {
+		.main-logo {
+			position: absolute;
+			height: 100px;
+			bottom: -25px;
+			left: 15px;
+		}
+		li {
+			margin-top: 15px;
+		}
+	}
+	.title-box {
+		margin-top: 35vh;
+		h1 {
+		    @media only screen and (min-width : 250px) {
+		    	font-size: @small-title-font;
+		    }
+		    @media only screen and (min-width : 768px) {
+		    	font-size: @medium-title-font;
+		    }
+		    @media only screen and (min-width : 992px) {
+		    	font-size: @large-title-font;
+		    } 
+		}
+		h1, h2 {
+			text-shadow: @shadow-for-readable-letters;
+		}
+	}
+}
+/* Bootstrap collapsing navbar has some cumulatives rules so I made the following */
+.navbar-inverse, .navbar, .navbar-header {
+	background-color: @light-transparency;
+	height: 80px;
+	border-bottom: 1px solid @light-grey;
+	border-radius: 0px;
+	li :hover {
+		border-bottom: 2px solid @main-background-color;
+	}
+	.navbar-toggle {
+		border-color: @light-grey; 
+	}
+}
+@media only screen and (max-width : 768px) {
+	.collapse, .navbar-collapse {
+		background-color: @darker-transparency;
+	}
+
+}
+.affix {
+	background-color: @black;
+}
