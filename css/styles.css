@@ -6976,6 +6976,7 @@ footer .logo-section {
   padding: 30px;
 }
 .festival-history p,
-.festival-history img {
+.festival-history img,
+.festival-history iframe {
   padding-bottom: 30px;
 }
