@@ -6852,6 +6852,7 @@ footer .logo-section {
   border-left: 1px solid #bbc8ce;
 }
 /* pages itself */
+/*----- MAIN PAGE ----- */
 .container-fluid {
   padding: 0px;
 }
@@ -6945,4 +6946,25 @@ footer .logo-section {
   margin-top: -35px;
   padding-bottom: 8vh;
   background-color: white;
+}
+/*----- CONTACT PAGE ----- */
+.contact {
+  background-color: white;
+}
+.contact h3 {
+  color: black;
+  margin-top: 5vh;
+}
+.contact .contact-form {
+  background-color: #2580a6;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  box-shadow: 3px 3px 3px black;
+}
+.contact .contact-form input,
+.contact .contact-form select,
+.contact .contact-form textarea {
+  margin-bottom: 20px;
 }
