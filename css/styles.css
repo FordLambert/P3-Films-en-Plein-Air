@@ -6968,3 +6968,14 @@ footer .logo-section {
 .contact .contact-form textarea {
   margin-bottom: 20px;
 }
+/*----- Festival PAGE ----- */
+.festival-history {
+  background-color: #2580a6;
+}
+.festival-history h3 {
+  padding: 30px;
+}
+.festival-history p,
+.festival-history img {
+  padding-bottom: 30px;
+}
