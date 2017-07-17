@@ -6829,17 +6829,27 @@ header .title-box h2 {
 /* ----- Footer ----- */
 footer {
   background-color: black;
-  height: 25vh;
 }
 footer .footer-section {
-  padding-top: 8vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 footer .footer-section ul {
   list-style-type: none;
+  padding-top: 2vh;
 }
 footer .footer-section img {
   height: 100px;
-  width: 130px;
+  width: 100px;
+}
+footer .fa {
+  padding: 5px;
+  font-size: 1.6em;
+  text-align: center;
+}
+footer .logo-section {
+  border-right: 1px solid #bbc8ce;
+  border-left: 1px solid #bbc8ce;
 }
 /* pages itself */
 .container-fluid {
