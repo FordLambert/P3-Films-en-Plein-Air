@@ -6756,7 +6756,7 @@ h3 {
   padding-right: 0px;
   padding-left: 0px;
   border-bottom: 3px solid #bbc8ce;
-  height: 98vh;
+  height: 50vh;
 }
 header {
   background-image: url(../pictures/cinema.jpg);
@@ -6777,7 +6777,7 @@ header nav li {
   margin-top: 15px;
 }
 header .title-box {
-  margin-top: 35vh;
+  margin-top: 18vh;
 }
 @media only screen and (min-width: 250px) {
   header .title-box h1 {
@@ -6854,6 +6854,13 @@ footer .logo-section {
 /*----- MAIN PAGE ----- */
 .container-fluid {
   padding: 0px;
+}
+/*----- Header specificities -----*/
+.index-header-box {
+  height: 98vh;
+}
+.index-header-box .title-box {
+  margin-top: 35vh;
 }
 /*----- Section 2 - The Festival -----*/
 .festival-section {
@@ -6945,6 +6952,7 @@ footer .logo-section {
   margin-top: -35px;
   padding-bottom: 8vh;
   background-color: white;
+  border-top: 4px solid #bbc8ce;
 }
 /*----- CONTACT PAGE ----- */
 .contact {
@@ -6952,14 +6960,14 @@ footer .logo-section {
 }
 .contact h3 {
   color: black;
-  margin-top: 5vh;
+  margin-top: 8vh;
 }
 .contact .contact-form {
   background-color: #2580a6;
   padding: 25px;
   border-radius: 15px;
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
   box-shadow: 3px 3px 3px black;
 }
 .contact .contact-form input,
