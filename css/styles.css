@@ -6756,9 +6756,9 @@ h3 {
   padding-right: 0px;
   padding-left: 0px;
   border-bottom: 3px solid #bbc8ce;
+  height: 98vh;
 }
 header {
-  height: 98vh;
   background-image: url(../pictures/cinema.jpg);
   background-size: 230vh;
   background-attachment: fixed;
@@ -6836,7 +6836,6 @@ footer .footer-section {
 }
 footer .footer-section ul {
   list-style-type: none;
-  padding-top: 2vh;
 }
 footer .footer-section img {
   height: 100px;
@@ -6979,4 +6978,17 @@ footer .logo-section {
 .festival-history img,
 .festival-history iframe {
   padding-bottom: 30px;
+}
+body {
+  background-color: white;
+}
+.mentions-section {
+  padding-top: 15vh;
+  margin-bottom: 5vh;
+  color: black;
+}
+.mentions-section h1,
+.mentions-section h2 {
+  color: #2580a6;
+  padding: 2vh;
 }
