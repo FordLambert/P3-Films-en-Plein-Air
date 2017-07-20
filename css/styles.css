@@ -7010,3 +7010,52 @@ body {
   color: #2580a6;
   padding: 2vh;
 }
+/*----- Programme PAGE ----- */
+.prog-page {
+  background-color: #2580a6;
+}
+.prog-bloc h3 {
+  padding-top: 5vh;
+}
+.prog-bloc h4 {
+  font-size: 200%;
+  text-decoration: underline;
+  padding: 4vh;
+  color: white;
+}
+.prog-bloc h5 {
+  font-size: 150%;
+  color: white;
+  padding: 15px;
+}
+.prog-bloc .poster-prog-img {
+  width: 30vw;
+}
+.prog-bloc .movie-day-box {
+  border-top: 2px solid #bbc8ce;
+  margin-bottom: 2vh;
+}
+.prog-bloc .movie-menu {
+  margin: 11px;
+  margin-top: 8vh;
+}
+.prog-bloc a {
+  color: white;
+  padding: 10px;
+  border: 2px solid #bbc8ce;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.prog-bloc a:hover {
+  color: #2580a6;
+  background-color: white;
+  text-decoration: none;
+}
+.prog-bloc .dropdown-menu {
+  width: 35vw;
+  padding: 15px;
+  line-height: 1.5;
+}
+.prog-bloc .btn {
+  margin-top: 0px;
+}
