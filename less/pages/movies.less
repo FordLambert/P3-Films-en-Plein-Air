@@ -5,6 +5,7 @@
 .prog-bloc {
 	h3 {
 		padding-top: 5vh;
+		padding-bottom: 5vh;
 	}
 	h4 {
 		font-size: 200%;
@@ -19,14 +20,21 @@
 	}
 	.poster-prog-img {
 		width: 30vw;
+		box-shadow: 4px 4px 4px black;
 	}
 	.movie-day-box {
 		border-top: 2px solid @light-grey;
-		margin-bottom: 2vh;
+	}
+	.last-box {
+		border-bottom: 2px solid @light-grey;
+		margin-bottom: 11px;
 	}
 	.movie-menu {
 		margin: 11px;
 		margin-top: 8vh;
+		@media screen and (max-width: 550px) {
+			margin-left: 0px;
+		}
 	}
 	a {
 		color: white;
@@ -41,11 +49,48 @@
 		text-decoration: none;
 	}
 	.dropdown-menu {
-		width: 35vw;
+		width: 80vw;
 		padding: 15px;
 		line-height: 1.5;
+		@media screen and (min-width: 550px) {
+			width: 65vw;
+		}
+		@media screen and (min-width: 850px) {
+			width: 40vw;
+		}
 	}
 	.btn {
 		margin-top: 0px;
+	}
+	.to-top-button {
+		margin-top: 0px;
+		margin-bottom: 2vh;
+	}
+	.btn-group {
+		margin-bottom: 2vh;
+	}
+	.modal {
+		h3 {
+			color: black;
+		}
+		.btn {
+			text-align: left;
+			width: 100%;
+		}
+		label {
+			margin: 15px;
+			color: @main-background-color;
+		}
+		.submit-button {
+			text-align: center;
+			width: 30vw;
+			margin: 2vh;
+		}
+		.email-input {
+			width: 80vw;
+			@media screen and (min-width: 550px) {
+				width: 20vw;
+			}
+		}
 	}
 }

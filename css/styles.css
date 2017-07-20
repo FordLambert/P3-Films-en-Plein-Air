@@ -6731,6 +6731,7 @@ body {
   line-height: 1.2;
   font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.9);
+  width: 99vw;
 }
 .btn-primary {
   background-color: white;
@@ -6749,6 +6750,10 @@ h1,
 h2,
 h3 {
   color: #fcfeff;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 /* common parts */
 /*----- Header - navbar and first section -----*/
@@ -7016,6 +7021,7 @@ body {
 }
 .prog-bloc h3 {
   padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 .prog-bloc h4 {
   font-size: 200%;
@@ -7030,14 +7036,23 @@ body {
 }
 .prog-bloc .poster-prog-img {
   width: 30vw;
+  box-shadow: 4px 4px 4px black;
 }
 .prog-bloc .movie-day-box {
   border-top: 2px solid #bbc8ce;
-  margin-bottom: 2vh;
+}
+.prog-bloc .last-box {
+  border-bottom: 2px solid #bbc8ce;
+  margin-bottom: 11px;
 }
 .prog-bloc .movie-menu {
   margin: 11px;
   margin-top: 8vh;
+}
+@media screen and (max-width: 550px) {
+  .prog-bloc .movie-menu {
+    margin-left: 0px;
+  }
 }
 .prog-bloc a {
   color: white;
@@ -7052,10 +7067,51 @@ body {
   text-decoration: none;
 }
 .prog-bloc .dropdown-menu {
-  width: 35vw;
+  width: 80vw;
   padding: 15px;
   line-height: 1.5;
 }
+@media screen and (min-width: 550px) {
+  .prog-bloc .dropdown-menu {
+    width: 65vw;
+  }
+}
+@media screen and (min-width: 850px) {
+  .prog-bloc .dropdown-menu {
+    width: 40vw;
+  }
+}
 .prog-bloc .btn {
   margin-top: 0px;
+}
+.prog-bloc .to-top-button {
+  margin-top: 0px;
+  margin-bottom: 2vh;
+}
+.prog-bloc .btn-group {
+  margin-bottom: 2vh;
+}
+.prog-bloc .modal h3 {
+  color: black;
+}
+.prog-bloc .modal .btn {
+  text-align: left;
+  width: 100%;
+}
+.prog-bloc .modal label {
+  margin: 15px;
+  color: #2580a6;
+}
+.prog-bloc .modal .submit-button {
+  text-align: center;
+  width: 30vw;
+  margin: 2vh;
+}
+.prog-bloc .modal .email-input {
+  width: 80vw;
+}
+@media screen and (min-width: 550px) {
+  .prog-bloc .modal .email-input {
+    width: 20vw;
+  }
 }
