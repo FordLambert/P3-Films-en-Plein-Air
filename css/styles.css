@@ -6849,13 +6849,16 @@ footer .footer-section img {
   width: 100px;
 }
 footer .fa {
-  padding: 5px;
+  padding: 2px;
   font-size: 1.6em;
   text-align: center;
 }
 footer .logo-section {
   border-right: 1px solid #bbc8ce;
   border-left: 1px solid #bbc8ce;
+}
+footer .btn {
+  background-color: white;
 }
 /* pages itself */
 /*----- MAIN PAGE ----- */
@@ -7069,6 +7072,7 @@ body {
 }
 .prog-page .prog-bloc a {
   color: white;
+  background-color: #2580a6;
   padding: 10px;
   border: 2px solid #bbc8ce;
   margin-left: 5px;
@@ -7113,6 +7117,11 @@ body {
 .prog-page .prog-bloc .modal .btn {
   text-align: left;
   width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .prog-page .prog-bloc .modal .btn {
+    width: 120%;
+  }
 }
 .prog-page .prog-bloc .modal label {
   margin: 15px;
