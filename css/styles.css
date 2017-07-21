@@ -6726,12 +6726,18 @@ button.close {
 /* Colors ! Everywhere ! */
 /* This is mainly for borders and glyphicons */
 /*Size based on Google advise*/
+/*----- All website is concerned -----*/
 body {
   font-size: 16px;
   line-height: 1.2;
   font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.9);
   width: 99vw;
+}
+/* for avoiding white gap on left side */
+html,
+body {
+  overflow-x: hidden;
 }
 .btn-primary {
   background-color: white;
@@ -6750,10 +6756,6 @@ h1,
 h2,
 h3 {
   color: #fcfeff;
-}
-html,
-body {
-  overflow-x: hidden;
 }
 /* common parts */
 /*----- Header - navbar and first section -----*/
@@ -6886,12 +6888,18 @@ footer .logo-section {
   margin-bottom: 20px;
 }
 /*----- Section 3 The movies -----*/
+.movies-section {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.movies-section h2 {
+  font-size: 200%;
+  text-decoration: underline;
+}
 .four-views-section {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
-  background-color: rgba(0, 0, 0, 0.9);
 }
 .four-views-section p {
   margin-top: 25px;
@@ -7002,6 +7010,7 @@ footer .logo-section {
 .festival-history iframe {
   padding-bottom: 8vh;
 }
+/*----- Legal mentions page -----*/
 body {
   background-color: white;
 }
@@ -7019,99 +7028,109 @@ body {
 .prog-page {
   background-color: #2580a6;
 }
-.prog-bloc h3 {
+.prog-page .prog-bloc {
+  /* this will probably be deleted */
+  /*until here*/
+}
+.prog-page .prog-bloc h3 {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-.prog-bloc h4 {
+.prog-page .prog-bloc h4 {
   font-size: 200%;
   text-decoration: underline;
   padding: 4vh;
   color: white;
 }
-.prog-bloc h5 {
+.prog-page .prog-bloc h5 {
   font-size: 150%;
   color: white;
   padding: 15px;
 }
-.prog-bloc .poster-prog-img {
-  width: 30vw;
-  box-shadow: 4px 4px 4px black;
-}
-.prog-bloc .movie-day-box {
-  border-top: 2px solid #bbc8ce;
-}
-.prog-bloc .last-box {
-  border-bottom: 2px solid #bbc8ce;
-  margin-bottom: 11px;
-}
-.prog-bloc .movie-menu {
+.prog-page .prog-bloc .movie-menu {
   margin: 11px;
   margin-top: 8vh;
 }
 @media screen and (max-width: 550px) {
-  .prog-bloc .movie-menu {
+  .prog-page .prog-bloc .movie-menu {
     margin-left: 0px;
   }
 }
-.prog-bloc a {
+.prog-page .prog-bloc .movie-day-box {
+  border-top: 2px solid #bbc8ce;
+}
+.prog-page .prog-bloc .movie-day-box .poster-prog-img {
+  width: 30vw;
+  box-shadow: 4px 4px 4px black;
+}
+.prog-page .prog-bloc .last-box {
+  border-bottom: 2px solid #bbc8ce;
+  margin-bottom: 11px;
+}
+.prog-page .prog-bloc a {
   color: white;
   padding: 10px;
   border: 2px solid #bbc8ce;
   margin-left: 5px;
   margin-right: 5px;
 }
-.prog-bloc a:hover {
+.prog-page .prog-bloc a:hover {
   color: #2580a6;
   background-color: white;
   text-decoration: none;
 }
-.prog-bloc .dropdown-menu {
-  width: 80vw;
+.prog-page .prog-bloc .dropdown-menu {
+  width: 70vw;
   padding: 15px;
   line-height: 1.5;
 }
 @media screen and (min-width: 550px) {
-  .prog-bloc .dropdown-menu {
+  .prog-page .prog-bloc .dropdown-menu {
     width: 65vw;
   }
 }
 @media screen and (min-width: 850px) {
-  .prog-bloc .dropdown-menu {
+  .prog-page .prog-bloc .dropdown-menu {
     width: 40vw;
   }
 }
-.prog-bloc .btn {
+.prog-page .prog-bloc .btn {
   margin-top: 0px;
 }
-.prog-bloc .to-top-button {
+.prog-page .prog-bloc .to-top-button {
   margin-top: 0px;
   margin-bottom: 2vh;
 }
-.prog-bloc .btn-group {
+.prog-page .prog-bloc .btn-group {
   margin-bottom: 2vh;
 }
-.prog-bloc .modal h3 {
+.prog-page .prog-bloc .modal h3 {
   color: black;
 }
-.prog-bloc .modal .btn {
+.prog-page .prog-bloc .modal .ticket-logo {
+  margin-bottom: 35px;
+}
+.prog-page .prog-bloc .modal .btn {
   text-align: left;
   width: 100%;
 }
-.prog-bloc .modal label {
+.prog-page .prog-bloc .modal label {
   margin: 15px;
   color: #2580a6;
 }
-.prog-bloc .modal .submit-button {
+.prog-page .prog-bloc .modal .submit-button {
   text-align: center;
   width: 30vw;
   margin: 2vh;
 }
-.prog-bloc .modal .email-input {
+.prog-page .prog-bloc .modal .email-input {
   width: 80vw;
 }
 @media screen and (min-width: 550px) {
-  .prog-bloc .modal .email-input {
+  .prog-page .prog-bloc .modal .email-input {
     width: 20vw;
   }
+}
+.prog-page .prog-bloc .modal strong {
+  text-decoration: underline;
 }

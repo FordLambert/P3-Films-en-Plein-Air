@@ -1,3 +1,4 @@
+/*----- All website is concerned -----*/
 body {
     font-size: @default-font-size;
 	line-height: 1.2;
@@ -5,6 +6,10 @@ body {
 	background-color: @darker-transparency;	
 	width: 99vw;
 }
+/* for avoiding white gap on left side */
+html, body {
+	overflow-x: hidden;
+ }
 
 .btn-primary {
 	background-color: white;
@@ -25,5 +30,3 @@ body {
 h1, h2, h3 {
 	color: @default-text-color;
 }
-
-html, body { overflow-x: hidden; }
