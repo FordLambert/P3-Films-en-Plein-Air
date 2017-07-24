@@ -1,4 +1,9 @@
 /*----- CONTACT PAGE ----- */
+.contact-page {
+	header {
+		background-image: url(../pictures/contact.jpg);/*Photo by Sergey Zolkin on Unsplash*/
+	}
+}
 .contact {
 	background-color: white;
 	h3 {
@@ -6,14 +11,13 @@
 		margin-top: 8vh;
 	}
 	.contact-form {
-		background-color: @main-background-color;
-		padding: 25px;
-		border-radius: 15px;
+		border: 1px solid @light-grey;
+		padding: 25px;;
 		margin-top: 5vh;
 		margin-bottom: 2vh;
-		box-shadow: 3px 3px 3px black;
 		input, select, textarea {
 			margin-bottom: 20px;
+			width: 100%;
 		}
 	}
 	.mailbox-box {
@@ -22,8 +26,5 @@
 	.g-recaptcha {
 		margin: 0 auto;
 		width: 300px;
-	}
-	#message {
-		width: 100%;
 	}
 }

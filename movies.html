@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="pictures/logo.png" />
       	<link rel="apple-touch-icon" href="pictures/logo.png"/>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -40,291 +40,341 @@
 				</nav>
 				<div class="title-box">
 					<h1>Programmation du festival</h1>
+					<h2>Août 2017</h2>
 				</div>
 			</header>
 			<!--Start of movie's section-->
 			<section class="prog-bloc text-center row">
 				<div class="row">
-					<div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6" id="top">
-						<h3>Chaque soir, deux films seront présentés à 18h et 21h</h3>
+					<div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 text-left" id="top">
+						<h3 class="text-center">Chaque soir, deux films seront présentés à 18h et 21h</h3>
 						<p>Un "après film" d'une heure pour chaque séance vous permettera de débattre de la projection, de vous rafraichir ou simplement de vous degourdir les jambes dans la fraicheur du parc.</p>
-						<h4>Avertissement aux visiteurs</h4>
+						<h4 class="text-center">Avertissement aux visiteurs</h4>
 						<p>Bien que certains films soient puissent être un peu dur pour de jeunes enfants, tous sont tout publics et adaptés au cadre ouvert du festival.<br>L'accès aux films est gratuit et ouvert à tous, n'hésitez cependant pas à cliquer sur les boutons des films que vous pensez aller voir pour aider notre équipe à gérer au mieux le nombre de personnes par soir.</p>
 					</div>
 				</div>
 				<!--Modal windows with form for register-->
-				<a data-toggle="modal" href="#infos" class="btn btn-primary">Vous voulez venir ? Dites le nous !</a>
-				<div class="modal" id="infos">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal">x</button>
-				        <h3 class="modal-title">Inscrivez vous en 30 secondes</h3>
-				        <img src="pictures/hourglass.png" alt="hourglass-logo">
-				        <p>S'inscrire n'est pas obligatoire mais vous nous aideriez beaucoup à estimer le nombre de personnes présentes
-				        et donc votre bon accueil.</p>
-				      </div>
-				      <div class="modal-body">
-				        <form>
-							<label>Je veux voir :</label><br>
-							<div class="movies-choice row">
-								<div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-4">
-									<span class="button-checkbox">
-										<button type="button" class="btn pull-left" data-color="primary">Le Concert</button>
-										<input type="checkbox" class="hidden" value="concert"/>
-									</span>
-									<span class="button-checkbox">
-										<button type="button" class="btn pull-left" data-color="primary">Polisse</button>
-										<input type="checkbox" class="hidden" value="polisse"/>
-									</span>
-									<span class="button-checkbox">
-										<button type="button" class="btn pull-left" data-color="primary">La tête en friche</button>
-										<input type="checkbox" class="hidden" value="teteFriche"/>
-									</span>
-									<span class="button-checkbox">
-										<button type="button" class="btn pull-left" data-color="primary">Les affranchis</button>
-										<input type="checkbox" class="hidden" value="affranchis"/>
-									</span>
-								</div>
-								<div class="col-xs-offset-1 col-xs-10 col-md-4 text-justify">
-									<span class="button-checkbox">
-										<button type="button" class="btn" data-color="primary">Le coeur des hommes</button>
-										<input type="checkbox" class="hidden" value="coeurHomme"/>
-									</span>
-									<span class="button-checkbox">
-										<button type="button" class="btn" data-color="primary">Persepolis</button>
-										<input type="checkbox" class="hidden" value="persepolis"/>
-									</span>
-									<span class="button-checkbox">
-										<button type="button" class="btn" data-color="primary">La guerre est déclarée</button>
-										<input type="checkbox" class="hidden" value="guerreDeclaree"/>
-									</span>
-									<span class="button-checkbox">
-										<button type="button" class="btn" data-color="primary">Les affranchis</button>
-										<input type="checkbox" class="hidden" value="affranchis"/>
-									</span>
-								</div>
-							</div>
-							<label for="email">Votre adresse mail :</label><br>
-							<input type="email" name="email" id="email" placeholder="Seulement pour les news" size="30" class="email-input" /><br>
-							<label for="number">Je viendrai : </label><br />
-						    <select name="number" id="number">
-					           <option value="1">Seul</option>
-					           <option value="3">Avec un ou deux ami(e)s</option>
-					           <option value="6">on est au moins cinq</option>
-					           <option value="10">On est plus que ça !</option>
-						    </select><br>
-							<input type="submit" name="C'est parti !" class="btn btn-primary submit-button"/>
-				        </form>
-				      </div>
-				    </div>
-				  </div>
-				</div>
+					<a data-toggle="modal" href="#infos" class="btn btn-primary registration-button">Vous voulez venir ? Dites le nous !</a>
+					<div class="modal" id="infos">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">x</button>
+						        <h3 class="modal-title">Inscrivez vous en 30 secondes</h3>
+						        <img src="pictures/hourglass.png" alt="hourglass-logo">
+						        <p>S'inscrire n'est pas obligatoire mais vous nous aideriez beaucoup à estimer le nombre de personnes présentes
+						        et donc votre bon accueil.</p>
+					    	</div>
+					    	<div class="modal-body">
+						        <form>
+									<label>Je veux voir :</label><br>
+									<div class="movies-choice row">
+										<div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-4">
+											<span class="button-checkbox">
+												<button type="button" class="btn pull-left" data-color="primary">Le Concert</button>
+												<input type="checkbox" class="hidden" value="concert"/>
+											</span>
+											<span class="button-checkbox">
+												<button type="button" class="btn pull-left" data-color="primary">Polisse</button>
+												<input type="checkbox" class="hidden" value="polisse"/>
+											</span>
+											<span class="button-checkbox">
+												<button type="button" class="btn pull-left" data-color="primary">La tête en friche</button>
+												<input type="checkbox" class="hidden" value="teteFriche"/>
+											</span>
+											<span class="button-checkbox">
+												<button type="button" class="btn pull-left" data-color="primary">Les affranchis</button>
+												<input type="checkbox" class="hidden" value="affranchis"/>
+											</span>
+										</div>
+										<div class="col-xs-offset-1 col-xs-10 col-md-4 text-justify">
+											<span class="button-checkbox">
+												<button type="button" class="btn" data-color="primary">Le coeur des hommes</button>
+												<input type="checkbox" class="hidden" value="coeurHomme"/>
+											</span>
+											<span class="button-checkbox">
+												<button type="button" class="btn" data-color="primary">Persepolis</button>
+												<input type="checkbox" class="hidden" value="persepolis"/>
+											</span>
+											<span class="button-checkbox">
+												<button type="button" class="btn" data-color="primary">La guerre est déclarée</button>
+												<input type="checkbox" class="hidden" value="guerreDeclaree"/>
+											</span>
+											<span class="button-checkbox">
+												<button type="button" class="btn" data-color="primary">Les affranchis</button>
+												<input type="checkbox" class="hidden" value="affranchis"/>
+											</span>
+										</div>
+									</div>
+									<label for="email">Votre adresse mail :</label><br>
+									<input type="email" name="email" id="email" placeholder="Seulement pour les news" size="30" class="email-input" /><br>
+									<label for="number">Je viendrai : </label><br />
+								    <select name="number" id="number">
+							           <option value="1">Seul</option>
+							           <option value="3">Avec un ou deux ami(e)s</option>
+							           <option value="6">on est au moins cinq</option>
+							           <option value="10">On est plus que ça !</option>
+								    </select><br>
+								    <div class="g-recaptcha" data-sitekey="6Lc6pSkUAAAAAOZlNHOJfTm0ICRSUGKvDnTuoRBj"></div>
+									<input type="submit" name="C'est parti !" class="btn btn-primary submit-button"/>
+						        </form>
+					    	</div>
+					    </div>
+					</div>
 				<!--End of register modal windows-->
-				<div class="row">
-					<div class="movie-menu col-xs-12">
-						<a href="#day-1"><span class="hidden-xs">Lundi </span>5 août</a>
-						<a href="#day-2"><span class="hidden-xs">Mardi </span>6 août</a>
-						<a href="#day-3"><span class="hidden-xs">Mercredi </span>7 août</a>
-						<a href="#day-4"><span class="hidden-xs">Jeudi </span>8 août</a>
-					</div>
-				</div>
+			</div>
+				<!--Tabs menu for movies-->
+				<div class="tabs-menu">
 
-				<!--Day 1-->
-				<div class="col-xs-12 movie-day-box" id="day-1">
-					<h4>- Le lundi 5 août -</h4>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
-						<img src="pictures/concert.png" alt="poster-concert" class="poster-prog-img hidden-xs">
-						<h5>Le Concert - 18h</h5>
-						<div class="btn-group"> 
-							<a data-toggle="modal" href="#movie-1" class="btn btn-primary">Casting et synopsis</a>
-							<div class="modal" id="movie-1">
-					  			<div class="modal-dialog">
-					    			<div class="modal-content">
-					    				<div class="modal-header">
-					        				<button type="button" class="close" data-dismiss="modal">x</button>
-					        				<h3 class="modal-title">Le Concert</h3>
-					        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
-					        				<p>Sortie en 2009</p>
-										   	<p><strong>Réalisation:</strong><br>Radu Mihaileanu</p>
-										   	<p><strong>Acteurs et actrices :</strong><br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
-										   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
-					        			</div>
-									    <div class="modal-body">
-										   	<p>Comédie dramatique</p>
-							    			<p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
+					<input id="day1" type="radio" name="tabs" checked>
+					<label for="day1">Lundi 5 août</label>
+					    
+					<input id="day2" type="radio" name="tabs">
+					<label for="day2">Mardi 6 août</label>
+					    
+					<input id="day3" type="radio" name="tabs">
+					<label for="day3">Mercredi 7 août</label>
+					    
+					<input id="day4" type="radio" name="tabs">
+					<label for="day4">Jeudi 8 août</label>
+					    
+					<section id="content-day-1" class="row">
+					   <div class="col-xs-12 movie-day-box" id="day-1">
+							<h4>Le lundi 5 août</h4>
+							<!--first movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
+								<img src="pictures/concert.png" alt="poster-concert" class="poster-prog-img hidden-xs">
+								<h5>Le Concert - 18h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-1" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-1">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">Le Concert</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2009</p>
+												   	<p><strong>Réalisation:</strong><br>Radu Mihaileanu</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
+												   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Comédie dramatique</p>
+									    			<p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--second movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4">
+								<img src="pictures/polisse.png" alt="poster-polisse" class="poster-prog-img hidden-xs">
+								<h5>Polisse - 21h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-2" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-2">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">Polisse</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2011</p>
+												   	<p><strong>Réalisation:</strong><br>Maïwenn</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Acteurs et actrices :<br>Karin Viard, JoeyStarr, Marina Foïs, Nicolas Duvauchelle, Maïwenn, Karole Rocher, Emmanuelle Bercot, Frédéric Pierrot</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Drame</p>
+									    			<p>Les policiers de la brigade de protection des mineurs (BPM) de Paris luttent contre les innombrables sévices subis par des mineurs : traque de pédophiles, appréhensions de parents soupçonnés de maltraitance, suivi d'adolescents pickpockets, fugueurs ou en dérive sexuelle, protection de mineurs sans domicile, de victimes de viol. Plongés dans cet univers éprouvant, ces policiers très impliqués et soudés tentent de préserver leur vie privée et leur santé psychique. Une jeune photographe est envoyée faire un reportage photo dans l'unité chargée des affaires de mœurs.</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5">
-						<img src="pictures/polisse.png" alt="poster-polisse" class="poster-prog-img hidden-xs">
-						<h5>Polisse - 21h</h5>
-						<div class="btn-group"> 
-							<a data-toggle="modal" href="#movie-2" class="btn btn-primary">Casting et synopsis</a>
-							<div class="modal" id="movie-2">
-					  			<div class="modal-dialog">
-					    			<div class="modal-content">
-					    				<div class="modal-header">
-					        				<button type="button" class="close" data-dismiss="modal">x</button>
-					        				<h3 class="modal-title">Polisse</h3>
-					        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
-					        				<p>Sortie en 2011</p>
-										   	<p><strong>Réalisation:</strong><br>Maïwenn</p>
-										   	<p><strong>Acteurs et actrices :</strong><br>Acteurs et actrices :<br>Karin Viard, JoeyStarr, Marina Foïs, Nicolas Duvauchelle, Maïwenn, Karole Rocher, Emmanuelle Bercot, Frédéric Pierrot</p>
-					        			</div>
-									    <div class="modal-body">
-										   	<p>Drame</p>
-							    			<p>Les policiers de la brigade de protection des mineurs (BPM) de Paris luttent contre les innombrables sévices subis par des mineurs : traque de pédophiles, appréhensions de parents soupçonnés de maltraitance, suivi d'adolescents pickpockets, fugueurs ou en dérive sexuelle, protection de mineurs sans domicile, de victimes de viol. Plongés dans cet univers éprouvant, ces policiers très impliqués et soudés tentent de préserver leur vie privée et leur santé psychique. Une jeune photographe est envoyée faire un reportage photo dans l'unité chargée des affaires de mœurs.</p>
+					</section>
+					    
+					<section id="content-day-2">
+						<div class="col-xs-12 movie-day-box" id="day-2">
+							<h4>Le mardi 6 août</h4>
+							<!--first movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
+								<img src="pictures/teteFriche.png" alt="teteFriche-concert" class="poster-prog-img hidden-xs">
+								<h5>La tête en friche - 18h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-1" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-1">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">La tête en friche</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2009</p>
+												   	<p><strong>Réalisation:</strong><br>Radu Mihaileanu</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
+												   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Comédie dramatique</p>
+									    			<p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+							<!--second movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4">
+								<img src="pictures/affranchis.png" alt="poster-affranchis" class="poster-prog-img hidden-xs">
+								<h5>Les Affranchis - 21h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-2" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-2">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">Les Affranchis</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2011</p>
+												   	<p><strong>Réalisation:</strong><br>Maïwenn</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Acteurs et actrices :<br>Karin Viard, JoeyStarr, Marina Foïs, Nicolas Duvauchelle, Maïwenn, Karole Rocher, Emmanuelle Bercot, Frédéric Pierrot</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Drame</p>
+									    			<p>Les policiers de la brigade de protection des mineurs (BPM) de Paris luttent contre les innombrables sévices subis par des mineurs : traque de pédophiles, appréhensions de parents soupçonnés de maltraitance, suivi d'adolescents pickpockets, fugueurs ou en dérive sexuelle, protection de mineurs sans domicile, de victimes de viol. Plongés dans cet univers éprouvant, ces policiers très impliqués et soudés tentent de préserver leur vie privée et leur santé psychique. Une jeune photographe est envoyée faire un reportage photo dans l'unité chargée des affaires de mœurs.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>   
+					</section>
+					    
+					<section id="content-day-3"> 
+						<div class="col-xs-12 movie-day-box" id="day-3">
+							<h4>Le mercredi 7 août</h4>
+							<!--first movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
+								<img src="pictures/coeurHomme.png" alt="poster-coeurHomme" class="poster-prog-img hidden-xs">
+								<h5>Le Coeur des Hommes - 18h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-1" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-1">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">Le Coeur des Hommes</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2009</p>
+												   	<p><strong>Réalisation:</strong><br>Radu Mihaileanu</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
+												   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Comédie dramatique</p>
+									    			<p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--second movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4">
+								<img src="pictures/persepolis.png" alt="poster-persepolis" class="poster-prog-img hidden-xs">
+								<h5>Persepolis - 21h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-2" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-2">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">Persepolis</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2011</p>
+												   	<p><strong>Réalisation:</strong><br>Maïwenn</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Acteurs et actrices :<br>Karin Viard, JoeyStarr, Marina Foïs, Nicolas Duvauchelle, Maïwenn, Karole Rocher, Emmanuelle Bercot, Frédéric Pierrot</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Drame</p>
+									    			<p>Les policiers de la brigade de protection des mineurs (BPM) de Paris luttent contre les innombrables sévices subis par des mineurs : traque de pédophiles, appréhensions de parents soupçonnés de maltraitance, suivi d'adolescents pickpockets, fugueurs ou en dérive sexuelle, protection de mineurs sans domicile, de victimes de viol. Plongés dans cet univers éprouvant, ces policiers très impliqués et soudés tentent de préserver leur vie privée et leur santé psychique. Une jeune photographe est envoyée faire un reportage photo dans l'unité chargée des affaires de mœurs.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>   
+					</section>
+					    
+					<section id="content-day-4">
+						<div class="col-xs-12 movie-day-box" id="day-4">
+							<h4>Le jeudi 8 août</h4>
+							<!--first movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
+								<img src="pictures/guerreDeclaree.png" alt="poster-guerreDeclaree" class="poster-prog-img hidden-xs">
+								<h5>La guerre est déclarée - 18h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-1" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-1">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">La guerre est déclarée</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2009</p>
+												   	<p><strong>Réalisation:</strong><br>Radu Mihaileanu</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
+												   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Comédie dramatique</p>
+									    			<p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--second movie-->
+							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4">
+								<img src="pictures/granTorino.png" alt="poster-granTorino" class="poster-prog-img hidden-xs">
+								<h5>Gran Torino - 21h</h5>
+								<div class="btn-group"> 
+									<a data-toggle="modal" href="#movie-2" class="btn btn-primary">Casting et synopsis</a>
+									<div class="modal" id="movie-2">
+							  			<div class="modal-dialog">
+							    			<div class="modal-content">
+							    				<div class="modal-header">
+							        				<button type="button" class="close" data-dismiss="modal">x</button>
+							        				<h3 class="modal-title">Gran Torino</h3>
+							        				<img src="pictures/ticket.png" alt="ticket-picture" class="ticket-logo">
+							        				<p>Sortie en 2011</p>
+												   	<p><strong>Réalisation:</strong><br>Maïwenn</p>
+												   	<p><strong>Acteurs et actrices :</strong><br>Acteurs et actrices :<br>Karin Viard, JoeyStarr, Marina Foïs, Nicolas Duvauchelle, Maïwenn, Karole Rocher, Emmanuelle Bercot, Frédéric Pierrot</p>
+							        			</div>
+											    <div class="modal-body">
+												   	<p>Drame</p>
+									    			<p>Les policiers de la brigade de protection des mineurs (BPM) de Paris luttent contre les innombrables sévices subis par des mineurs : traque de pédophiles, appréhensions de parents soupçonnés de maltraitance, suivi d'adolescents pickpockets, fugueurs ou en dérive sexuelle, protection de mineurs sans domicile, de victimes de viol. Plongés dans cet univers éprouvant, ces policiers très impliqués et soudés tentent de préserver leur vie privée et leur santé psychique. Une jeune photographe est envoyée faire un reportage photo dans l'unité chargée des affaires de mœurs.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>   
+					</section>
 				</div>
-				<!--Day 2-->
-				<div class="col-xs-12 movie-day-box" id="day-2">
-					<h4>- Le mardi 6 août -</h4>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
-						<img src="pictures/teteFriche.png" alt="poster-teteFriche" class="poster-prog-img hidden-xs">
-						<h5>La tête en friche - 18h</h5>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Synopsis<span class="caret"></span></button>
-						  <div class="dropdown-menu">
-						  	<p>Comédie dramatique</p>
-						    <p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
-						  </div>
-						</div>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Casting<span class="caret"></span></button>
-						  <div class="dropdown-menu">
-						  	<p>Sortie en 2009</p>
-						   	<p>Réalisation:<br>Radu Mihaileanu</p>
-						   	<p>Acteurs et actrices :<br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
-						   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
-						  </div>
-						</div>
-					</div>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5">
-						<img src="pictures/affranchis.png" alt="poster-affranchis" class="poster-prog-img hidden-xs">
-						<h5>Les affranchis - 21h</h5>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Synopsis<span class="caret"></span></button>
-						  <div class="dropdown-menu dropdown-menu-right">
-						  	<p>Comédie dramatique</p>
-						    <p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
-						  </div>
-						</div>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Casting<span class="caret"></span></button>
-						  <div class="dropdown-menu dropdown-menu-right">
-						  	<p>Sortie en 2009</p>
-						   	<p>Réalisation:<br>Radu Mihaileanu</p>
-						   	<p>Acteurs et actrices :<br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
-						   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
-						  </div>
-						</div>
-					</div>
-				</div>
-				<!--Day 3-->
-				<div class="col-xs-12 movie-day-box" id="day-3">
-					<h4>- Le mercredi 7 août -</h4>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
-						<img src="pictures/coeurHomme.png" alt="poster-coeurHomme" class="poster-prog-img hidden-xs">
-						<h5>Le coeur des hommes - 18h</h5>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Synopsis<span class="caret"></span></button>
-						  <div class="dropdown-menu">
-						  	<p>Comédie dramatique</p>
-						    <p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
-						  </div>
-						</div>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Casting<span class="caret"></span></button>
-						  <div class="dropdown-menu">
-						  	<p>Sortie en 2009</p>
-						   	<p>Réalisation:<br>Radu Mihaileanu</p>
-						   	<p>Acteurs et actrices :<br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
-						   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
-						  </div>
-						</div>
-					</div>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5">
-						<img src="pictures/persepolis.png" alt="poster-persepolis" class="poster-prog-img hidden-xs">
-						<h5>Persépolis - 21h</h5>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Synopsis<span class="caret"></span></button>
-						  <div class="dropdown-menu dropdown-menu-right">
-						  	<p>Comédie dramatique</p>
-						    <p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
-						  </div>
-						</div>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Casting<span class="caret"></span></button>
-						  <div class="dropdown-menu dropdown-menu-right">
-						  	<p>Sortie en 2009</p>
-						   	<p>Réalisation:<br>Radu Mihaileanu</p>
-						   	<p>Acteurs et actrices :<br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
-						   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
-						  </div>
-						</div>
-					</div>
-				</div>
-				<!--Day 4-->
-				<div class="col-xs-12 movie-day-box last-box" id="day-4">
-					<h4>- Le jeudi 8 août -</h4>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5">
-						<img src="pictures/guerreDeclaree.png" alt="poster-guerreDeclaree" class="poster-prog-img hidden-xs">
-						<h5>La guerre est déclarée - 18h</h5>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Synopsis<span class="caret"></span></button>
-						  <div class="dropdown-menu">
-						  	<p>Comédie dramatique</p>
-						    <p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
-						  </div>
-						</div>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Casting<span class="caret"></span></button>
-						  <div class="dropdown-menu">
-						  	<p>Sortie en 2009</p>
-						   	<p>Réalisation:<br>Radu Mihaileanu</p>
-						   	<p>Acteurs et actrices :<br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
-						   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
-						  </div>
-						</div>
-					</div>
-					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5">
-						<img src="pictures/granTorino.png" alt="poster-granTorino" class="poster-prog-img hidden-xs">
-						<h5>Gran Torino - 21h</h5>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Synopsis<span class="caret"></span></button>
-						  <div class="dropdown-menu dropdown-menu-right">
-						  	<p>Comédie dramatique</p>
-						    <p>À l'époque de Brejnev, Andreï Filipov était le plus grand chef d'orchestre de l'Union soviétique et dirigeait le célèbre Orchestre du Bolchoï. Mais après avoir refusé de se séparer de ses musiciens juifs, dont son meilleur ami Sacha, et surtout la soliste Léa, il a été interrompu lors du concerto de Tchaïkovsky, et licencié au faîte de sa gloire. Trente ans plus tard, il travaille toujours au Bolchoï mais comme homme de ménage. Un soir, alors qu'Andreï est resté très tard pour astiquer le bureau du maître des lieux, il intercepte un fax adressé à la direction du Bolchoï : il s'agit d'une invitation du Théâtre du Châtelet conviant l'orchestre officiel à venir jouer à Paris. Soudain, Andreï a une idée folle : pourquoi ne pas réunir ses anciens amis musiciens, qui vivent aujourd'hui de petits boulots, et les emmener à Paris, en les faisant passer pour le Bolchoï ? Entre autres exigences de ce faux Bolchoï, la participation de la soliste Anne-Marie Jacquet. L'occasion tant attendue d'achever le concerto, et de renouer les fils du passé.</p>
-						  </div>
-						</div>
-						<div class="btn-group"> 
-						  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Casting<span class="caret"></span></button>
-						  <div class="dropdown-menu dropdown-menu-right">
-						  	<p>Sortie en 2009</p>
-						   	<p>Réalisation:<br>Radu Mihaileanu</p>
-						   	<p>Acteurs et actrices :<br>Aleksei Guskov, Mélanie Laurent, Dimitry Nazarov, François Berléand, 
-						   	Valeri Barinov, Miou-Miou, Lionel Abelanski, Alexander Komissarov</p>
-						  </div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="to-top-button col-xs-12">
-						<a href="#top">Revenir en haut</a>
-					</div>
-				</div>
-
-			</section>
+			</section><!--End of movie main section-->
 
 			<footer class="row text-center">
 				<div class="col-xs-offset-2 col-xs-8 footer-section">

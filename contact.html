@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="pictures/logo.png" />
       	<link rel="apple-touch-icon" href="pictures/logo.png"/>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> >
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -17,7 +17,7 @@
     	<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid contact-page">
 			<!-- Header section with navbar -->
 			<header class="col-xs-12 text-center header-box">
 				<nav class="navbar navbar-inverse navbar-fixed-top navbar-center" data-spy="affix" data-offset-top="200">
@@ -45,33 +45,38 @@
 				</div>
 			</header>
 
-			<section class="contact row text-center">
-				<div class="col-xs-12">
-					<h3>Envoyez nous un petit message et nous vous repondrons aussi vite que possible !</h3>
-					<div class="col-md-offset-4 col-md-4 contact-form">
-						<form method="post" action="">
-							<p><label for="name">Votre nom :</label></p>
-							<p><input type="text" name="name" id="name" placeholder="Ex : Bernard" size="30" maxlength="10" required /></p>
-							<p><label for="email">Votre adresse mail :</label></p>
-							<p><input type="email" name="email" id="email" placeholder="Ex : Bernard@email.fr" size="30" required /></p>
-							<p><label for="pays">Votre question concerne : </label></p>
-						    <p><select name="pays" id="pays">
-					           <option value="programmation">La programmation</option>
-					           <option value="organisation">L'organisation</option>
-					           <option value="partenaires">Nos partenaires</option>
-					           <option value="autre">Autre chose</option>
-						    </select></p>
-							<p><label for="message">Votre Message :</label></p>
-							<p><textarea name="message" id="message" rows="10" required></textarea></p>
-							<div class="g-recaptcha" data-sitekey="6Lc6pSkUAAAAAOZlNHOJfTm0ICRSUGKvDnTuoRBj"></div>
-							<input type="submit" name="Envoyer" class="btn btn-primary" />
-						</form>
-					</div>
-					<div class="col-md-offset-4 col-md-4 mailbox-box">
+			<section class="contact row">
+				<h3>Envoyez nous un petit message et nous vous repondrons aussi vite que possible !</h3>
+				<div class="col-xs-offset-1 col-xs-10">
+
+					<div class="col-xs-12 col-md-6 mailbox-box">
 						<h3>Vous préférez le courrier ?</h3>
 						<p>écrivez nous !</p>
 						<img src="pictures/mailbox.png" alt="mailbox-picture">
 						<p>Cinéma Acrobate<br>Maillé-Brézé<br>Quai de la Fosse<br>44000 Nantes</p>
+					</div>
+
+					<div class="col-xs-12 col-md-6 contact-form">
+						<form method="post" action="">
+						<div class="col-xs-12 col-sm-4">
+							<input type="text" name="name" id="name" placeholder="Votre nom" size="30" maxlength="10" required />
+							<input type="email" name="email" id="email" placeholder="Votre email" size="30" required />
+							<label for="pays">Votre question concerne : </label><br>
+						    <select name="subject" id="subject">
+					           <option value="programmation">La programmation</option>
+					           <option value="organisation">L'organisation</option>
+					           <option value="partenaires">Nos partenaires</option>
+					           <option value="autre">Autre chose</option>
+						    </select>
+						</div>
+						<div class="col-xs-12 col-sm-8">
+							<textarea name="message" id="message" placeholder="Votre message" rows="10" required></textarea>
+						</div>
+						</form>
+						<div class="col-xs-12">
+							<div class="g-recaptcha" data-sitekey="6Lc6pSkUAAAAAOZlNHOJfTm0ICRSUGKvDnTuoRBj"></div>
+						</div>
+						<input type="submit" name="Envoyer !" class="btn btn-primary col-xs-12"/>
 					</div>
 				</div>
 			</section>

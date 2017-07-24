@@ -1072,7 +1072,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -5961,7 +5961,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6079,7 +6079,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6730,7 +6730,7 @@ button.close {
 body {
   font-size: 16px;
   line-height: 1.2;
-  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.9);
   width: 99vw;
 }
@@ -6743,7 +6743,7 @@ body {
   background-color: white;
   margin-top: 25px;
   font-size: 120%;
-  border: 1px solid black;
+  border: 1px solid #2580a6;
   color: #2580a6;
 }
 .btn-primary a {
@@ -6752,10 +6752,24 @@ body {
 .btn-primary:hover {
   background-color: #227091;
 }
-h1,
-h2,
+section {
+  padding-bottom: 2vh;
+}
 h3 {
-  color: #fcfeff;
+  font-size: 200%;
+  margin: 4vh;
+}
+h4 {
+  font-size: 150%;
+  margin: 2vh;
+  color: white;
+}
+h5 {
+  font-size: 120%;
+  margin: 2vh;
+}
+p {
+  padding-bottom: 25px;
 }
 /* common parts */
 /*----- Header - navbar and first section -----*/
@@ -6763,7 +6777,7 @@ h3 {
   padding-right: 0px;
   padding-left: 0px;
   border-bottom: 3px solid #bbc8ce;
-  height: 50vh;
+  height: 70vh;
 }
 header {
   background-image: url(../pictures/cinema.jpg);
@@ -6784,7 +6798,7 @@ header nav li {
   margin-top: 15px;
 }
 header .title-box {
-  margin-top: 18vh;
+  margin-top: 15vh;
 }
 @media only screen and (min-width: 250px) {
   header .title-box h1 {
@@ -6804,6 +6818,7 @@ header .title-box {
 header .title-box h1,
 header .title-box h2 {
   text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  color: white;
 }
 /* Bootstrap collapsing navbar has some cumulatives rules so I made the following */
 .navbar-inverse,
@@ -6848,6 +6863,9 @@ footer .footer-section img {
   height: 100px;
   width: 100px;
 }
+footer .footer-section h3 {
+  color: white;
+}
 footer .fa {
   padding: 2px;
   font-size: 1.6em;
@@ -6877,6 +6895,9 @@ footer .btn {
   background-color: #2580A6;
   padding-bottom: 6vh;
 }
+.festival-section h3 {
+  color: white;
+}
 .festival-section .glyphicon-menu-down {
   background-color: #bbc8ce;
   border: 1px solid black;
@@ -6893,49 +6914,35 @@ footer .btn {
 /*----- Section 3 The movies -----*/
 .movies-section {
   background-color: rgba(0, 0, 0, 0.9);
+  padding-bottom: 0px;
 }
-.movies-section h2 {
-  font-size: 200%;
-  text-decoration: underline;
-}
-.four-views-section {
+.movies-section .four-views-section {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
 }
-.four-views-section p {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  color: #fcfeff;
-}
-.carousel-picture {
+.movies-section .carousel-picture {
   width: 100%;
 }
-.picture-poster,
-.poster-description {
+.movies-section .picture-poster,
+.movies-section .poster-description {
   width: 33.333vw;
+}
+.movies-section p {
+  color: white;
 }
 /*----- Section 4 The news -----*/
 .blog-section {
   background-color: #fcfeff;
 }
-.blog-section h3 {
-  color: black;
-  font-size: 200%;
-  margin: 10vh;
-}
-.blog-section h4 {
-  font-size: 150%;
-}
+.blog-section h3,
+.blog-section h4,
 .blog-section h5 {
   color: #2580a6;
-  font-size: 120%;
-  padding: 1vh;
 }
-.blog-section h4,
-.blog-section p {
-  margin-bottom: 5vh;
+.blog-section h4 {
+  margin-bottom: 4vh;
 }
 /*----- Section 5 Contact -----*/
 .contact-section {
@@ -6945,23 +6952,24 @@ footer .btn {
   color: #fcfeff;
   padding-top: 10px;
 }
-.contact-section .row {
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+.contact-section h3 {
+  color: white;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 150%;
 }
 .contact-section p {
-  padding-top: 35px;
+  margin-top: 6vh;
+}
+.contact-section .btn {
+  margin-top: 5vh;
 }
 /*----- Section 6 Partners -----*/
 .partners-section {
   background-color: #fcfeff;
+  margin-bottom: 2vh;
 }
 .partners-section h3 {
-  padding-top: 6vh;
-  padding-bottom: 10vh;
-  color: black;
-}
-.partners-section h4 {
   color: #2580a6;
 }
 .partners-section .legend-box {
@@ -6971,25 +6979,31 @@ footer .btn {
   border-top: 4px solid #bbc8ce;
 }
 /*----- CONTACT PAGE ----- */
+.contact-page header {
+  background-image: url(../pictures/contact.jpg);
+  /*Photo by Sergey Zolkin on Unsplash*/
+}
 .contact {
   background-color: white;
+  /*#message {
+		width: 50%;
+	}*/
 }
 .contact h3 {
   color: black;
   margin-top: 8vh;
 }
 .contact .contact-form {
-  background-color: #2580a6;
+  border: 1px solid #bbc8ce;
   padding: 25px;
-  border-radius: 15px;
   margin-top: 5vh;
   margin-bottom: 2vh;
-  box-shadow: 3px 3px 3px black;
 }
 .contact .contact-form input,
 .contact .contact-form select,
 .contact .contact-form textarea {
   margin-bottom: 20px;
+  width: 100%;
 }
 .contact .mailbox-box {
   margin-bottom: 8vh;
@@ -6998,20 +7012,18 @@ footer .btn {
   margin: 0 auto;
   width: 300px;
 }
-.contact #message {
-  width: 100%;
+/*----- Festival Page ----- */
+.festival-page header {
+  background-image: url(../pictures/crowd.jpg);
+  /*Photo by Edwin Andrade on Unsplash*/
 }
-/*----- Festival PAGE ----- */
-.festival-history {
-  background-color: #2580a6;
-}
-.festival-history h3 {
-  padding: 30px;
-}
-.festival-history p,
-.festival-history img,
-.festival-history iframe {
+.festival-page .festival-history .owner-picture,
+.festival-page .festival-history iframe {
   padding-bottom: 8vh;
+}
+.festival-page .festival-history .logo {
+  height: 25vh;
+  margin-top: 4vh;
 }
 /*----- Legal mentions page -----*/
 body {
@@ -7028,8 +7040,8 @@ body {
   padding: 2vh;
 }
 /*----- Programme PAGE ----- */
-.prog-page {
-  background-color: #2580a6;
+.prog-page header {
+  background-image: url(../pictures/projector-background.jpeg);
 }
 .prog-page .prog-bloc {
   /* this will probably be deleted */
@@ -7040,14 +7052,10 @@ body {
   padding-bottom: 5vh;
 }
 .prog-page .prog-bloc h4 {
-  font-size: 200%;
-  text-decoration: underline;
   padding: 4vh;
-  color: white;
+  color: black;
 }
 .prog-page .prog-bloc h5 {
-  font-size: 150%;
-  color: white;
   padding: 15px;
 }
 .prog-page .prog-bloc .movie-menu {
@@ -7058,9 +7066,6 @@ body {
   .prog-page .prog-bloc .movie-menu {
     margin-left: 0px;
   }
-}
-.prog-page .prog-bloc .movie-day-box {
-  border-top: 2px solid #bbc8ce;
 }
 .prog-page .prog-bloc .movie-day-box .poster-prog-img {
   width: 30vw;
@@ -7129,7 +7134,7 @@ body {
 }
 .prog-page .prog-bloc .modal .submit-button {
   text-align: center;
-  width: 30vw;
+  width: 80%;
   margin: 2vh;
 }
 .prog-page .prog-bloc .modal .email-input {
@@ -7142,4 +7147,52 @@ body {
 }
 .prog-page .prog-bloc .modal strong {
   text-decoration: underline;
+}
+/*test oh the new menu for movies*/
+.tabs-menu section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+.tabs-menu input {
+  display: none;
+}
+.tabs-menu label {
+  display: inline-block;
+  margin: 6vh 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+.tabs-menu label:hover {
+  color: #888;
+  cursor: pointer;
+}
+.tabs-menu input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid #2580A6;
+  border-bottom: 1px solid #fff;
+}
+.tabs-menu #day1:checked ~ #content-day-1,
+.tabs-menu #day2:checked ~ #content-day-2,
+.tabs-menu #day3:checked ~ #content-day-3,
+.tabs-menu #day4:checked ~ #content-day-4 {
+  display: block;
+}
+@media screen and (max-width: 650px) {
+  .tabs-menu label {
+    font-size: 0;
+  }
+  .tabs-menu label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tabs-menu label {
+    padding: 15px;
+  }
 }

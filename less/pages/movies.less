@@ -1,20 +1,18 @@
 /*----- Programme PAGE ----- */
 .prog-page {
-	background-color: @main-background-color;
+		header {
+			background-image: url(../pictures/projector-background.jpeg);
+		}
 	.prog-bloc {
 		h3 {
 			padding-top: 5vh;
 			padding-bottom: 5vh;
 		}
 		h4 {
-			font-size: 200%;
-			text-decoration: underline;
 			padding: 4vh;
-			color: white;
+			color: @black;
 		}
 		h5 {
-			font-size: 150%;
-			color: white;
 			padding: 15px;
 		}
 		.movie-menu {
@@ -25,7 +23,6 @@
 			}
 		}
 		.movie-day-box {
-			border-top: 2px solid @light-grey;
 			.poster-prog-img {
 				width: 30vw;
 				box-shadow: 4px 4px 4px black;
@@ -91,7 +88,7 @@
 			}
 			.submit-button {
 				text-align: center;
-				width: 30vw;
+				width: 80%;
 				margin: 2vh;
 			}
 			.email-input {
@@ -104,5 +101,64 @@
 				text-decoration: underline;
 			}
 		}
+	}
+}
+
+
+/*test oh the new menu for movies*/
+.tabs-menu {
+	section {
+	  display: none;
+	  padding: 20px 0 0;
+	  border-top: 1px solid #ddd;
+	}
+
+	input {
+	  display: none;
+	}
+
+	label {
+	  display: inline-block;
+	  margin: 6vh 0 -1px;
+	  padding: 15px 25px;
+	  font-weight: 600;
+	  text-align: center;
+	  color: #bbb;
+	  border: 1px solid transparent;
+	}
+
+	label:hover {
+	  color: #888;
+	  cursor: pointer;
+	}
+
+	input:checked + label {
+	  color: #555;
+	  border: 1px solid #ddd;
+	  border-top: 2px solid #2580A6;
+	  border-bottom: 1px solid #fff;
+	}
+
+	#day1:checked ~ #content-day-1,
+	#day2:checked ~ #content-day-2,
+	#day3:checked ~ #content-day-3,
+	#day4:checked ~ #content-day-4 {
+	  display: block;
+	}
+
+	@media screen and (max-width: 650px) {
+	  label {
+	    font-size: 0;
+	  }
+	  label:before {
+	    margin: 0;
+	    font-size: 18px;
+	  }
+	}
+
+	@media screen and (max-width: 400px) {
+	  label {
+	    padding: 15px;
+	  }
 	}
 }
