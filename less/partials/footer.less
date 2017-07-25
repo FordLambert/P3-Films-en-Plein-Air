@@ -26,6 +26,16 @@ footer {
 		border-left: 1px solid @light-grey;
 	}
 	.btn {
-		background-color: white;
+	background-color: white;
+	border: 1px solid @main-background-color;
+	color: @main-background-color;
+
+	a {
+		color: @default-text-color;
 	}
+
+	&:hover {
+		background-color: @darker-main-color;
+	}
+}
 }

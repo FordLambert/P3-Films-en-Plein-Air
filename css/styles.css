@@ -6749,6 +6749,9 @@ body {
 .btn-primary a {
   color: #fcfeff;
 }
+.btn-primary a:hover {
+  text-decoration: none;
+}
 .btn-primary:hover {
   background-color: #227091;
 }
@@ -6788,6 +6791,9 @@ header {
 header a {
   color: #fcfeff;
 }
+header a:hover {
+  text-decoration: underline;
+}
 header nav .main-logo {
   position: absolute;
   height: 100px;
@@ -6798,7 +6804,7 @@ header nav li {
   margin-top: 15px;
 }
 header .title-box {
-  margin-top: 15vh;
+  margin-top: 25vh;
 }
 @media only screen and (min-width: 250px) {
   header .title-box h1 {
@@ -6877,6 +6883,14 @@ footer .logo-section {
 }
 footer .btn {
   background-color: white;
+  border: 1px solid #2580a6;
+  color: #2580a6;
+}
+footer .btn a {
+  color: #fcfeff;
+}
+footer .btn:hover {
+  background-color: #227091;
 }
 /* pages itself */
 /*----- MAIN PAGE ----- */
@@ -6980,23 +6994,26 @@ footer .btn {
 }
 /*----- CONTACT PAGE ----- */
 .contact-page header {
-  background-image: url(../pictures/contact.jpg);
+  background-image: url(../pictures/contact1.jpg);
   /*Photo by Sergey Zolkin on Unsplash*/
 }
-.contact {
-  background-color: white;
-  /*#message {
-		width: 50%;
-	}*/
+.contact-page header .navbar-inverse,
+.contact-page header .navbar,
+.contact-page header .navbar-header {
+  background-color: black;
 }
-.contact h3 {
-  color: black;
-  margin-top: 8vh;
+.contact {
+  border: 1px solid #bbc8ce;
+}
+.contact h2 {
+  margin: 4vh;
+}
+.contact .border-box {
+  background-color: white;
 }
 .contact .contact-form {
-  border: 1px solid #bbc8ce;
+  border-left: 1px solid #bbc8ce;
   padding: 25px;
-  margin-top: 5vh;
   margin-bottom: 2vh;
 }
 .contact .contact-form input,
@@ -7005,8 +7022,8 @@ footer .btn {
   margin-bottom: 20px;
   width: 100%;
 }
-.contact .mailbox-box {
-  margin-bottom: 8vh;
+.contact .mailbox-box .fa {
+  font-size: 250%;
 }
 .contact .g-recaptcha {
   margin: 0 auto;

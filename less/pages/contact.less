@@ -1,19 +1,23 @@
 /*----- CONTACT PAGE ----- */
 .contact-page {
 	header {
-		background-image: url(../pictures/contact.jpg);/*Photo by Sergey Zolkin on Unsplash*/
+		background-image: url(../pictures/contact1.jpg);/*Photo by Sergey Zolkin on Unsplash*/
+		.navbar-inverse, .navbar, .navbar-header {
+			background-color: @black;
+		}
 	}
 }
 .contact {
-	background-color: white;
-	h3 {
-		color: @black;
-		margin-top: 8vh;
+	h2 {
+		margin: 4vh;
 	}
+	.border-box {
+		background-color: white;
+	}
+	border: 1px solid @light-grey;
 	.contact-form {
-		border: 1px solid @light-grey;
-		padding: 25px;;
-		margin-top: 5vh;
+		border-left: 1px solid @light-grey;
+		padding: 25px;
 		margin-bottom: 2vh;
 		input, select, textarea {
 			margin-bottom: 20px;
@@ -21,7 +25,9 @@
 		}
 	}
 	.mailbox-box {
-		margin-bottom: 8vh;
+		.fa {
+			font-size: 250%;
+		}
 	}
 	.g-recaptcha {
 		margin: 0 auto;

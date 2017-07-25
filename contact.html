@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="pictures/logo.png" />
       	<link rel="apple-touch-icon" href="pictures/logo.png"/>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> >
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -42,21 +42,30 @@
 				<div class="title-box">
 					<h1>Des questions ?</h1>
 					<h2>Contactez-nous !</h2>
+					<div class="btn"><a href="#" class="fa fa-facebook"></a></div>
+					<div class="btn"><a href="#" class="fa fa-twitter"></a></div>
+					<div class="btn"><a href="#" class="fa fa-google"></a></div>
+					<div class="btn"><a href="#" class="fa fa-instagram"></a></div>
 				</div>
 			</header>
 
 			<section class="contact row">
-				<h3>Envoyez nous un petit message et nous vous repondrons aussi vite que possible !</h3>
 				<div class="col-xs-offset-1 col-xs-10">
-
-					<div class="col-xs-12 col-md-6 mailbox-box">
-						<h3>Vous préférez le courrier ?</h3>
-						<p>écrivez nous !</p>
-						<img src="pictures/mailbox.png" alt="mailbox-picture">
-						<p>Cinéma Acrobate<br>Maillé-Brézé<br>Quai de la Fosse<br>44000 Nantes</p>
+					<h3 class="text-center">Envoyez nous un petit message et nous vous repondrons aussi vite que possible !</h3>
+					<div class="col-xs-12 col-md-4 mailbox-box">
+						<h2 class="text-center">Notre équipe vous écoute</h2>
+						<div class="col-md-6 col-xs-12 text-center">
+							<img src="pictures/mailbox.png" alt="mailbox-picture">
+							<p>Cinéma Acrobate<br>Maillé-Brézé<br>Quai de la Fosse<br>44000 Nantes</p>
+						</div>
+						<div class="col-xs-12 col-md-6 text-center">
+							<div class="btn"><a href="#" class="fa fa-skype"></a></div>
+							<p>Laissez un message</p>
+							<div class="btn fa fa-phone"></div>
+							<p>555-0188</p>
+						</div>
 					</div>
-
-					<div class="col-xs-12 col-md-6 contact-form">
+					<div class="col-xs-12 col-md-8 contact-form">
 						<form method="post" action="">
 						<div class="col-xs-12 col-sm-4">
 							<input type="text" name="name" id="name" placeholder="Votre nom" size="30" maxlength="10" required />
