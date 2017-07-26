@@ -6879,17 +6879,23 @@ footer .footer-section h3 {
 footer .footer-section a {
   color: #2580a6;
 }
+footer .footer-section a:hover {
+  color: white;
+}
 footer .fa {
   padding: 2px;
   font-size: 1.6em;
   text-align: center;
 }
-footer .social-section,
+footer .btn {
+  width: 33%;
+}
+footer .btn-primary {
+  margin-top: 0px;
+  margin-bottom: 1vh;
+}
 footer .logo-section {
   border-left: 1px solid #bbc8ce;
-}
-footer .link-section,
-footer .logo-section {
   border-right: 1px solid #bbc8ce;
 }
 footer .social-section,

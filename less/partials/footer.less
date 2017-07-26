@@ -18,6 +18,9 @@ footer {
 		}
 		a {
 			color: @main-background-color;
+			&:hover {
+				color: @white;
+			}
 		}
 	}
 	.fa {
@@ -25,10 +28,15 @@ footer {
 	    font-size: @bigger-glyph;
 	    text-align: center;
 	}
-	.social-section, .logo-section {
-		border-left: 1px solid @light-grey;
+	.btn {
+		width: 33%;
 	}
-	.link-section, .logo-section {
+	.btn-primary {
+		margin-top: 0px;
+		margin-bottom: 1vh;
+	}
+	.logo-section {
+		border-left: 1px solid @light-grey;
 		border-right: 1px solid @light-grey;
 	}
 	.social-section, .logo-section, .link-section {
