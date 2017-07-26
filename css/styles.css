@@ -6739,6 +6739,12 @@ html,
 body {
   overflow-x: hidden;
 }
+a:hover {
+  text-decoration: none;
+}
+.btn-primary:hover {
+  color: white;
+}
 .btn-primary {
   background-color: white;
   margin-top: 25px;
@@ -6748,9 +6754,6 @@ body {
 }
 .btn-primary a {
   color: #fcfeff;
-}
-.btn-primary a:hover {
-  text-decoration: none;
 }
 .btn-primary:hover {
   background-color: #227091;
@@ -6780,7 +6783,7 @@ p {
   padding-right: 0px;
   padding-left: 0px;
   border-bottom: 3px solid #bbc8ce;
-  height: 70vh;
+  height: 75vh;
 }
 header {
   background-image: url(../pictures/cinema.jpg);
@@ -6791,14 +6794,14 @@ header {
 header a {
   color: #fcfeff;
 }
-header a:hover {
-  text-decoration: underline;
-}
 header nav .main-logo {
   position: absolute;
   height: 100px;
   bottom: -25px;
   left: 15px;
+}
+header nav a:hover {
+  text-decoration: underline;
 }
 header nav li {
   margin-top: 15px;
@@ -6856,7 +6859,7 @@ header .title-box h2 {
 }
 /* ----- Footer ----- */
 footer {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 footer .footer-section {
   padding-top: 5vh;
@@ -6871,26 +6874,28 @@ footer .footer-section img {
 }
 footer .footer-section h3 {
   color: white;
+  margin: 0px;
+}
+footer .footer-section a {
+  color: #2580a6;
 }
 footer .fa {
   padding: 2px;
   font-size: 1.6em;
   text-align: center;
 }
+footer .social-section,
 footer .logo-section {
-  border-right: 1px solid #bbc8ce;
   border-left: 1px solid #bbc8ce;
 }
-footer .btn {
-  background-color: white;
-  border: 1px solid #2580a6;
-  color: #2580a6;
+footer .link-section,
+footer .logo-section {
+  border-right: 1px solid #bbc8ce;
 }
-footer .btn a {
-  color: #fcfeff;
-}
-footer .btn:hover {
-  background-color: #227091;
+footer .social-section,
+footer .logo-section,
+footer .link-section {
+  min-height: 15vh;
 }
 /* pages itself */
 /*----- MAIN PAGE ----- */
@@ -6994,13 +6999,21 @@ footer .btn:hover {
 }
 /*----- CONTACT PAGE ----- */
 .contact-page header {
-  background-image: url(../pictures/contact1.jpg);
+  background-image: url(../pictures/team.jpg);
   /*Photo by Sergey Zolkin on Unsplash*/
 }
 .contact-page header .navbar-inverse,
 .contact-page header .navbar,
 .contact-page header .navbar-header {
   background-color: black;
+}
+.contact-page header .fa {
+  font-size: 1.6em;
+}
+@media only screen and (max-width: 450px) {
+  .contact-page header .fa {
+    font-size: 1.2em;
+  }
 }
 .contact {
   border: 1px solid #bbc8ce;
@@ -7022,8 +7035,8 @@ footer .btn:hover {
   margin-bottom: 20px;
   width: 100%;
 }
-.contact .mailbox-box .fa {
-  font-size: 250%;
+.contact .mailbox-box {
+  margin-top: 10vh;
 }
 .contact .g-recaptcha {
   margin: 0 auto;

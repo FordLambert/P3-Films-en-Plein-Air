@@ -10,19 +10,20 @@ body {
 html, body {
 	overflow-x: hidden;
  }
-
+a:hover {
+	text-decoration: none;
+}
+.btn-primary:hover {
+	color: @white;
+}
 .btn-primary {
 	background-color: white;
 	margin-top: 25px;
 	font-size: @button-default-font;
 	border: 1px solid @main-background-color;
 	color: @main-background-color;
-
 	a {
 		color: @default-text-color;
-	}
-	a:hover {
-		text-decoration: none;
 	}
 	&:hover {
 		background-color: @darker-main-color;

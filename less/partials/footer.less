@@ -1,6 +1,6 @@
 /* ----- Footer ----- */
 footer {
-	background-color: @black;
+	background-color: @darker-transparency;
 	.footer-section {
 		padding-top: 5vh;
 		padding-bottom: 5vh;
@@ -14,28 +14,24 @@ footer {
 		}
 		h3 {
 			color: @white;
+			margin: 0px;
+		}
+		a {
+			color: @main-background-color;
 		}
 	}
 	.fa {
-			padding: 2px;
-		    font-size: @bigger-glyph;
-		    text-align: center;
-		}
-	.logo-section {
-		border-right: 1px solid @light-grey;
+		padding: 2px;
+	    font-size: @bigger-glyph;
+	    text-align: center;
+	}
+	.social-section, .logo-section {
 		border-left: 1px solid @light-grey;
 	}
-	.btn {
-	background-color: white;
-	border: 1px solid @main-background-color;
-	color: @main-background-color;
-
-	a {
-		color: @default-text-color;
+	.link-section, .logo-section {
+		border-right: 1px solid @light-grey;
 	}
-
-	&:hover {
-		background-color: @darker-main-color;
+	.social-section, .logo-section, .link-section {
+		min-height: 15vh;
 	}
-}
 }

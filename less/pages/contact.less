@@ -1,9 +1,15 @@
 /*----- CONTACT PAGE ----- */
 .contact-page {
 	header {
-		background-image: url(../pictures/contact1.jpg);/*Photo by Sergey Zolkin on Unsplash*/
+		background-image: url(../pictures/team.jpg);/*Photo by Sergey Zolkin on Unsplash*/
 		.navbar-inverse, .navbar, .navbar-header {
 			background-color: @black;
+		}
+		.fa {
+			font-size: @bigger-glyph;
+			@media only screen and (max-width : 450px) {
+		    	font-size: @medium-glyph;
+		    }
 		}
 	}
 }
@@ -25,9 +31,7 @@
 		}
 	}
 	.mailbox-box {
-		.fa {
-			font-size: 250%;
-		}
+		margin-top: 10vh;
 	}
 	.g-recaptcha {
 		margin: 0 auto;
