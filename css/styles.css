@@ -7070,6 +7070,11 @@ body {
   padding: 2vh;
 }
 /*----- Programme PAGE ----- */
+.prog-page .g-recaptcha {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 10px;
+}
 .prog-page header {
   background-image: url(../pictures/projector-background.jpeg);
 }
@@ -7225,4 +7230,34 @@ body {
   .tabs-menu label {
     padding: 15px;
   }
+}
+/*----- NEWS PAGE ----- */
+.news-page {
+  /*background-image: url(../pictures/team.jpg);/*Photo by Sergey Zolkin on Unsplash*/
+}
+.news-page .news-box {
+  border-right: 2px solid #bbc8ce;
+  border-left: 2px solid #bbc8ce;
+}
+.news-page .news {
+  margin-bottom: 4vh;
+}
+.news-page .news img {
+  width: 20vh;
+}
+.news-page .news h4 {
+  color: black;
+}
+.news-page .news .date {
+  font-size: 65%;
+  color: #bbc8ce;
+}
+.news-page aside {
+  border-right: 2px solid #bbc8ce;
+}
+.news-page aside .last-news {
+  margin-bottom: 3vh;
+}
+.news-page aside .last-news img {
+  margin-bottom: 10px;
 }
