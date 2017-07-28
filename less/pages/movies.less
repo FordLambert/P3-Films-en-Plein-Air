@@ -113,35 +113,35 @@
 /*test oh the new menu for movies*/
 .tabs-menu {
 	section {
-	  display: none;
-	  padding: 20px 0 0;
-	  border-top: 1px solid #ddd;
+		display: none;
+		padding: 20px 0 0;
+		border-top: 1px solid #ddd;
 	}
 
 	input {
-	  display: none;
+		display: none;
 	}
 
 	label {
-	  display: inline-block;
-	  margin: 6vh 0 -1px;
-	  padding: 15px 25px;
-	  font-weight: 600;
-	  text-align: center;
-	  color: #bbb;
-	  border: 1px solid transparent;
+	 	display: inline-block;
+	 	margin: 6vh 0 -1px;
+	 	padding: 15px 25px;
+	 	font-weight: 600;
+	 	text-align: center;
+	 	color: #bbb;
+	 	border: 1px solid transparent;
 	}
 
 	label:hover {
-	  color: #888;
-	  cursor: pointer;
+	 	color: #888;
+	 	cursor: pointer;
 	}
 
 	input:checked + label {
-	  color: #555;
-	  border: 1px solid #ddd;
-	  border-top: 2px solid #2580A6;
-	  border-bottom: 1px solid #fff;
+		color: #555;
+		border: 1px solid #ddd;
+		border-top: 2px solid #2580A6;
+		border-bottom: 1px solid #fff;
 	}
 
 	#day1:checked ~ #content-day-1,
@@ -152,9 +152,6 @@
 	}
 
 	@media screen and (max-width: 650px) {
-	  label {
-	    font-size: 0;
-	  }
 	  label:before {
 	    margin: 0;
 	    font-size: 18px;
@@ -164,6 +161,12 @@
 	@media screen and (max-width: 400px) {
 	  label {
 	    padding: 15px;
+	  }
+	}
+	@media screen and (max-width: 330px) {
+	  label {
+	    border: 1px solid @light-grey;
+	    width: 33%;
 	  }
 	}
 }

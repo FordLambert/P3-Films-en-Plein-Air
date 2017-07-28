@@ -7033,7 +7033,7 @@ footer .link-section {
 .contact-page header .navbar-inverse,
 .contact-page header .navbar,
 .contact-page header .navbar-header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .contact-page header .fa {
   font-size: 1.6em;
@@ -7062,6 +7062,9 @@ footer .link-section {
 .contact .contact-form textarea {
   margin-bottom: 20px;
   width: 100%;
+}
+.contact .contact-form .btn {
+  width: 30%;
 }
 .contact .mailbox-box {
   margin-top: 10vh;
@@ -7246,9 +7249,6 @@ body {
   display: block;
 }
 @media screen and (max-width: 650px) {
-  .tabs-menu label {
-    font-size: 0;
-  }
   .tabs-menu label:before {
     margin: 0;
     font-size: 18px;
@@ -7257,6 +7257,12 @@ body {
 @media screen and (max-width: 400px) {
   .tabs-menu label {
     padding: 15px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .tabs-menu label {
+    border: 1px solid #bbc8ce;
+    width: 33%;
   }
 }
 /*----- NEWS PAGE ----- */
@@ -7275,6 +7281,7 @@ body {
 }
 .news-page .news h4 {
   color: black;
+  margin-left: 0px;
 }
 .news-page .news .date {
   font-size: 65%;
@@ -7290,6 +7297,14 @@ body {
   margin-bottom: 10px;
 }
 /*-----Article page-----*/
+.article-page header {
+  background-image: url(../pictures/main-loutre.jpg);
+}
+.article-page .navbar-inverse,
+.article-page .navbar,
+.article-page .navbar-header {
+  background-color: black;
+}
 .article-page section {
   margin-top: 15vh;
   min-height: 100vh;
@@ -7308,11 +7323,11 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 8px;
   background: #bbc8ce;
 }
 .article-page .progress {
-  height: 4px;
+  height: 8px;
   background: #2580a6;
   width: 0;
   transition: width 0.5s;
