@@ -75,4 +75,17 @@ $(function () {
           updateProgress(top, height);
         });
     }
+    //checking on movie page if we have a "day" parameter and open the right tab//
+    if ($(".prog-page" ).length) {
+        if(window.location.href.indexOf("#day2") > -1) {
+            $("#day1").prop("checked", "false");
+            $("#day2").prop("checked", "true");
+        } else if (window.location.href.indexOf("#day3") > -1) {
+            $("#day1").prop("checked", "false");
+            $("#day3").prop("checked", "true");
+        } else if (window.location.href.indexOf("#day4") > -1) {
+            $("#day1").prop("checked", "false");
+            $("#day4").prop("checked", "true");
+        }
+    }
 });
