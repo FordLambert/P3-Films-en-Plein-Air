@@ -7022,7 +7022,7 @@ footer .link-section {
 .contact-page header .navbar-inverse,
 .contact-page header .navbar,
 .contact-page header .navbar-header {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
 }
 .contact-page header .fa {
   font-size: 1.6em;
@@ -7032,7 +7032,7 @@ footer .link-section {
     font-size: 1.2em;
   }
 }
-.contact-page iframe {
+.contact-page .map-box iframe {
   width: 70%;
 }
 .contact {
@@ -7049,6 +7049,11 @@ footer .link-section {
   padding: 25px;
   margin-bottom: 2vh;
 }
+@media only screen and (max-width: 990px) {
+  .contact .contact-form {
+    border: none;
+  }
+}
 .contact .contact-form input,
 .contact .contact-form select,
 .contact .contact-form textarea {
@@ -7056,14 +7061,19 @@ footer .link-section {
   width: 100%;
 }
 .contact .contact-form .btn {
-  width: 100%;
+  width: 20vw;
+}
+@media only screen and (max-width: 450px) {
+  .contact .contact-form .btn {
+    width: 40vw;
+  }
 }
 .contact .mailbox-box {
   margin-top: 10vh;
 }
 .contact .g-recaptcha {
-  margin: 0 auto;
   width: 300px;
+  margin: 0 auto;
 }
 /*----- Festival Page ----- */
 .festival-page header {
