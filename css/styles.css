@@ -6777,17 +6777,6 @@ h5 {
 p {
   padding-bottom: 25px;
 }
-/*Edge*/
-@supports ( -ms-accelerator:true ) {
-  html {
-    overflow: hidden;
-    height: 100%;
-  }
-  body {
-    overflow: auto;
-    height: 100%;
-  }
-}
 /*Ie 10/11*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html {
@@ -7033,7 +7022,7 @@ footer .link-section {
 .contact-page header .navbar-inverse,
 .contact-page header .navbar,
 .contact-page header .navbar-header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .contact-page header .fa {
   font-size: 1.6em;
@@ -7042,6 +7031,9 @@ footer .link-section {
   .contact-page header .fa {
     font-size: 1.2em;
   }
+}
+.contact-page iframe {
+  width: 70%;
 }
 .contact {
   border: 1px solid #bbc8ce;
@@ -7064,7 +7056,7 @@ footer .link-section {
   width: 100%;
 }
 .contact .contact-form .btn {
-  width: 30%;
+  width: 100%;
 }
 .contact .mailbox-box {
   margin-top: 10vh;
