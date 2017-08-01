@@ -6727,17 +6727,17 @@ button.close {
 /* This is mainly for borders and glyphicons */
 /*Size based on Google advise*/
 /*----- All website is concerned -----*/
+/* next line is for avoiding white gap on left side */
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   font-size: 16px;
   line-height: 1.2;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.9);
   width: 99vw;
-}
-/* for avoiding white gap on left side */
-html,
-body {
-  overflow-x: hidden;
 }
 a:hover {
   text-decoration: none;
@@ -6777,7 +6777,12 @@ h5 {
 p {
   padding-bottom: 25px;
 }
-/*Ie 10/11*/
+.g-recaptcha {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 10px;
+}
+/*This a fix for ie 10 & 11 to prevent problems with "backgroud-pictures: fixed"*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html {
     overflow: hidden;
@@ -6789,21 +6794,55 @@ p {
   }
 }
 /* common parts */
-/*----- Header - navbar and first section -----*/
+/*----- HEADER - navbar and first section -----*/
+/* index header only */
+.index-header-box {
+  height: 98vh;
+}
+.index-header-box .title-box {
+  margin-top: 35vh;
+}
+/* others headers */
 .header-box {
-  padding-right: 0px;
-  padding-left: 0px;
-  border-bottom: 3px solid #bbc8ce;
   height: 75vh;
 }
 header {
+  padding-right: 0px;
+  padding-left: 0px;
+  border-bottom: 3px solid #bbc8ce;
   background-image: url(../pictures/cinema.jpg);
   background-size: 230vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  /* Bootstrap collapsing navbar has some cumulatives rules so I made the following */
+  /* end of navbar rules */
 }
-header a {
-  color: #fcfeff;
+header .navbar-inverse,
+header .navbar,
+header .navbar-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 80px;
+  border-bottom: 1px solid #bbc8ce;
+  border-radius: 0px;
+}
+header .navbar-inverse li :hover,
+header .navbar li :hover,
+header .navbar-header li :hover {
+  border-bottom: 2px solid #2580a6;
+}
+header .navbar-inverse .navbar-toggle,
+header .navbar .navbar-toggle,
+header .navbar-header .navbar-toggle {
+  border-color: #bbc8ce;
+}
+@media only screen and (max-width: 768px) {
+  header .collapse,
+  header .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+header .affix {
+  background-color: black;
 }
 header nav .main-logo {
   position: absolute;
@@ -6839,34 +6878,6 @@ header .title-box h1,
 header .title-box h2 {
   text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
   color: white;
-}
-/* Bootstrap collapsing navbar has some cumulatives rules so I made the following */
-.navbar-inverse,
-.navbar,
-.navbar-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 80px;
-  border-bottom: 1px solid #bbc8ce;
-  border-radius: 0px;
-}
-.navbar-inverse li :hover,
-.navbar li :hover,
-.navbar-header li :hover {
-  border-bottom: 2px solid #2580a6;
-}
-.navbar-inverse .navbar-toggle,
-.navbar .navbar-toggle,
-.navbar-header .navbar-toggle {
-  border-color: #bbc8ce;
-}
-@media only screen and (max-width: 768px) {
-  .collapse,
-  .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-}
-.affix {
-  background-color: black;
 }
 /* ----- Footer ----- */
 footer {
@@ -6918,13 +6929,6 @@ footer .link-section {
 /*----- MAIN PAGE ----- */
 .container-fluid {
   padding: 0px;
-}
-/*----- Header specificities -----*/
-.index-header-box {
-  height: 98vh;
-}
-.index-header-box .title-box {
-  margin-top: 35vh;
 }
 /*----- Section 2 - The Festival -----*/
 .festival-section {
@@ -7015,6 +7019,9 @@ footer .link-section {
   border-top: 4px solid #bbc8ce;
 }
 /*----- CONTACT PAGE ----- */
+.contact-page {
+  /*everything between header and footer for "contact" page*/
+}
 .contact-page header {
   background-image: url(../pictures/team.jpg);
   /*Photo by Sergey Zolkin on Unsplash*/
@@ -7032,48 +7039,45 @@ footer .link-section {
     font-size: 1.2em;
   }
 }
-.contact-page .map-box iframe {
-  width: 70%;
-}
-.contact {
+.contact-page .contact {
   border: 1px solid #bbc8ce;
 }
-.contact h2 {
+.contact-page .contact h2 {
   margin: 4vh;
 }
-.contact .border-box {
+.contact-page .contact .border-box {
   background-color: white;
 }
-.contact .contact-form {
+.contact-page .contact .contact-form {
   border-left: 1px solid #bbc8ce;
   padding: 25px;
   margin-bottom: 2vh;
 }
 @media only screen and (max-width: 990px) {
-  .contact .contact-form {
+  .contact-page .contact .contact-form {
     border: none;
   }
 }
-.contact .contact-form input,
-.contact .contact-form select,
-.contact .contact-form textarea {
+.contact-page .contact .contact-form input,
+.contact-page .contact .contact-form select,
+.contact-page .contact .contact-form textarea {
   margin-bottom: 20px;
   width: 100%;
 }
-.contact .contact-form .btn {
+.contact-page .contact .contact-form .btn {
   width: 20vw;
 }
 @media only screen and (max-width: 450px) {
-  .contact .contact-form .btn {
+  .contact-page .contact .contact-form .btn {
     width: 40vw;
   }
 }
-.contact .mailbox-box {
+.contact-page .contact .mailbox-box {
   margin-top: 10vh;
 }
-.contact .g-recaptcha {
-  width: 300px;
-  margin: 0 auto;
+.contact-page .map-box iframe {
+  width: 70%;
+  /*only in .map-box because a captcha is an iframe too*/
 }
 /*----- Festival Page ----- */
 .festival-page header {
@@ -7103,17 +7107,11 @@ body {
   padding: 2vh;
 }
 /*----- Programme PAGE ----- */
-.prog-page .g-recaptcha {
-  margin: 0 auto;
-  width: 300px;
-  margin-top: 10px;
+.prog-page {
+  /*everything between header and footer for "movies" page*/
 }
 .prog-page header {
   background-image: url(../pictures/projector-background.jpeg);
-}
-.prog-page .prog-bloc {
-  /* this will probably be deleted */
-  /*until here*/
 }
 .prog-page .prog-bloc h3 {
   padding-top: 5vh;
@@ -7155,21 +7153,6 @@ body {
   color: #2580a6;
   background-color: white;
   text-decoration: none;
-}
-.prog-page .prog-bloc .dropdown-menu {
-  width: 70vw;
-  padding: 15px;
-  line-height: 1.5;
-}
-@media screen and (min-width: 550px) {
-  .prog-page .prog-bloc .dropdown-menu {
-    width: 65vw;
-  }
-}
-@media screen and (min-width: 850px) {
-  .prog-page .prog-bloc .dropdown-menu {
-    width: 40vw;
-  }
 }
 .prog-page .prog-bloc .btn {
   margin-top: 0px;
@@ -7216,7 +7199,7 @@ body {
 .prog-page .prog-bloc .modal strong {
   text-decoration: underline;
 }
-/*test oh the new menu for movies*/
+/* this is the tabs menu for the 4 different days */
 .tabs-menu section {
   display: none;
   padding: 20px 0 0;
@@ -7298,7 +7281,11 @@ body {
 .news-page aside .last-news img {
   margin-bottom: 10px;
 }
-/*-----Article page-----*/
+/*-----ARTICLE PAGE-----*/
+.article-page {
+  /*everything between header and footer for "article" page*/
+  /*this is for the progress bar when scrolling in an article*/
+}
 .article-page header {
   background-image: url(../pictures/main-loutre.jpg);
 }
@@ -7328,7 +7315,7 @@ body {
   height: 8px;
   background: #bbc8ce;
 }
-.article-page .progress {
+.article-page .progress-bar {
   height: 8px;
   background: #2580a6;
   width: 0;

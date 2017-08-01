@@ -1,4 +1,9 @@
 /*----- All website is concerned -----*/
+/* next line is for avoiding white gap on left side */
+html, body {
+	overflow-x: hidden;
+}
+
 body {
     font-size: @default-font-size;
 	line-height: 1.2;
@@ -6,22 +11,21 @@ body {
 	background-color: @darker-transparency;	
 	width: 99vw;
 }
-/* for avoiding white gap on left side */
-html, body {
-	overflow-x: hidden;
- }
+
 a:hover {
 	text-decoration: none;
 }
+
 .btn-primary:hover {
 	color: @white;
 }
+
 .btn-primary {
-	background-color: white;
+	background-color: @white;
 	margin-top: 25px;
 	font-size: @button-default-font;
-	border: 1px solid @main-background-color;
-	color: @main-background-color;
+	border: 1px solid @main-color;
+	color: @main-color;
 	a {
 		color: @default-text-color;
 	}
@@ -29,27 +33,38 @@ a:hover {
 		background-color: @darker-main-color;
 	}
 }
+
 section {
 	padding-bottom: 2vh;
 }
+
 h3 {
 	font-size: 200%;
 	margin: 4vh;
 }
+
 h4 {
 	font-size: 150%;
 	margin: 2vh;
 	color: @white;
 }
+
 h5 {
 	font-size: 120%;
 	margin: 2vh;
 }
+
 p {
 	padding-bottom: 25px;
 }
 
-/*Ie 10/11*/
+.g-recaptcha {
+	margin: 0 auto;
+	width: 300px;
+	margin-top: 10px;
+}
+
+/*This a fix for ie 10 & 11 to prevent problems with "backgroud-pictures: fixed"*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
 {
     html{

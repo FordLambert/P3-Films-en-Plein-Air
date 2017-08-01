@@ -2,9 +2,11 @@
 .contact-page {
 	header {
 		background-image: url(../pictures/team.jpg);/*Photo by Sergey Zolkin on Unsplash*/
+
 		.navbar-inverse, .navbar, .navbar-header {
 			background-color: @black;
 		}
+
 		.fa {
 			font-size: @bigger-glyph;
 			@media only screen and (max-width : 450px) {
@@ -12,43 +14,50 @@
 		    }
 		}
 	}
-	.map-box {
-		iframe {
-			width: 70%;
+
+	/*everything between header and footer for "contact" page*/
+	.contact {
+		border: 1px solid @light-grey;
+
+		h2 {
+			margin: 4vh;
 		}
-	}
-}
-.contact {
-	h2 {
-		margin: 4vh;
-	}
-	.border-box {
-		background-color: white;
-	}
-	border: 1px solid @light-grey;
-	.contact-form {
-		border-left: 1px solid @light-grey;
-		@media only screen and (max-width : 990px) {
+
+		.border-box {
+			background-color: white;
+		}
+
+		.contact-form {
+			border-left: 1px solid @light-grey;
+			padding: 25px;
+			margin-bottom: 2vh;
+
+			@media only screen and (max-width : 990px) {
 				border: none;
 			}
-		padding: 25px;
-		margin-bottom: 2vh;
-		input, select, textarea {
-			margin-bottom: 20px;
-			width: 100%;
-		}
-		.btn {
-			width: 20vw;
-			@media only screen and (max-width : 450px) {
-				width: 40vw;
+
+			input, select, textarea {
+				margin-bottom: 20px;
+				width: 100%;
+			}
+
+			.btn {
+				width: 20vw;
+
+				@media only screen and (max-width : 450px) {
+					width: 40vw;
+				}
 			}
 		}
+
+		.mailbox-box {
+			margin-top: 10vh;
+		}
 	}
-	.mailbox-box {
-		margin-top: 10vh;
-	}
-	.g-recaptcha {
-		width: 300px;
-		margin: 0 auto;
+
+	.map-box {
+		iframe {
+			width: 70%;/*only in .map-box because a captcha is an iframe too*/
+		}
 	}
 }

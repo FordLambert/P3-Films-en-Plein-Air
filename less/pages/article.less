@@ -1,24 +1,31 @@
-/*-----Article page-----*/
+/*-----ARTICLE PAGE-----*/
 .article-page {
+
 	header {
 		background-image: url(../pictures/main-loutre.jpg);
 	}
+
 	.navbar-inverse, .navbar, .navbar-header {
 		background-color: @black;
 	}
+	
+	/*everything between header and footer for "article" page*/
 	section {
 		margin-top: 15vh;
 		min-height: 100vh;
+
 		h1 {
-			color: @main-background-color;
+			color: @main-color;
 			font-size: @small-title-font;
 		}
+
 		img {
 			width: 100%;
 			margin-top: 4vh;
 			margin-bottom: 4vh;
 		}
 	}
+	/*this is for the progress bar when scrolling in an article*/
 	.progressContainer{
 	  position: fixed;
 	  bottom: 0;
@@ -27,9 +34,10 @@
 	  height: 8px;
 	  background: @light-grey;
 	}
-	.progress{
+
+	.progress-bar{
 	  height: 8px;
-	  background: @main-background-color;
+	  background: @main-color;
 	  width: 0;
 	  transition: width 0.5s;
 	}

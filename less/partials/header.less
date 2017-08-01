@@ -1,18 +1,54 @@
-/*----- Header - navbar and first section -----*/
+/*----- HEADER - navbar and first section -----*/
+
+/* index header only */
+.index-header-box {
+	height: 98vh;
+
+	.title-box {
+		margin-top: 35vh;
+	}
+}
+
+/* others headers */
 .header-box {
+	height: 75vh;
+}
+
+header {
 	padding-right: 0px;
 	padding-left: 0px;
 	border-bottom: 3px solid @light-grey;
-	height: 75vh;
-}
-header {
 	background-image: url(../pictures/cinema.jpg);
 	background-size: 230vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	a {
-		color: @default-text-color;
+
+	/* Bootstrap collapsing navbar has some cumulatives rules so I made the following */
+	.navbar-inverse, .navbar, .navbar-header {
+		background-color: @light-transparency;
+		height: 80px;
+		border-bottom: 1px solid @light-grey;
+		border-radius: 0px;
+
+		li :hover {
+			border-bottom: 2px solid @main-color;
+		}
+
+		.navbar-toggle {
+			border-color: @light-grey; 
+		}
 	}
+
+	@media only screen and (max-width : 768px) {
+		.collapse, .navbar-collapse {
+			background-color: @darker-transparency;
+		}
+	}
+
+	.affix {
+		background-color: @black;
+	}
+	
 	nav {
 		.main-logo {
 			position: absolute;
@@ -20,13 +56,17 @@ header {
 			bottom: -25px;
 			left: 15px;
 		}
+
 		a:hover {
 			text-decoration: underline;
 		}
+
 		li {
 			margin-top: 15px;
 		}
 	}
+	/* end of navbar rules */
+	
 	.title-box {
 		margin-top: 25vh;
 		h1 {
@@ -40,31 +80,10 @@ header {
 		    	font-size: @large-title-font;
 		    } 
 		}
+
 		h1, h2 {
 			text-shadow: @shadow-for-readable-letters;
 			color: @white;
 		}
 	}
-}
-/* Bootstrap collapsing navbar has some cumulatives rules so I made the following */
-.navbar-inverse, .navbar, .navbar-header {
-	background-color: @light-transparency;
-	height: 80px;
-	border-bottom: 1px solid @light-grey;
-	border-radius: 0px;
-	li :hover {
-		border-bottom: 2px solid @main-background-color;
-	}
-	.navbar-toggle {
-		border-color: @light-grey; 
-	}
-}
-@media only screen and (max-width : 768px) {
-	.collapse, .navbar-collapse {
-		background-color: @darker-transparency;
-	}
-
-}
-.affix {
-	background-color: @black;
 }
