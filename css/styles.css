@@ -6736,7 +6736,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: white;
   width: 99vw;
 }
 a:hover {
@@ -7093,16 +7093,18 @@ footer .link-section {
   margin-top: 4vh;
 }
 /*----- Legal mentions page -----*/
-body {
-  background-color: white;
+.mentions-page .navbar-inverse,
+.mentions-page .navbar,
+.mentions-page .navbar-header {
+  background-color: black;
 }
-.mentions-section {
+.mentions-page .mentions-section {
   padding-top: 15vh;
   margin-bottom: 5vh;
   color: black;
 }
-.mentions-section h1,
-.mentions-section h2 {
+.mentions-page .mentions-section h1,
+.mentions-page .mentions-section h2 {
   color: #2580a6;
   padding: 2vh;
 }
@@ -7111,7 +7113,7 @@ body {
   /*everything between header and footer for "movies" page*/
 }
 .prog-page header {
-  background-image: url(../pictures/projector-background.jpeg);
+  background-image: url(../pictures/projector-background.jpg);
 }
 .prog-page .prog-bloc h3 {
   padding-top: 5vh;
@@ -7252,7 +7254,7 @@ body {
 }
 /*----- NEWS PAGE ----- */
 .news-page header {
-  background-image: url(../pictures/tablet.jpeg);
+  background-image: url(../pictures/tablet.jpg);
 }
 .news-page .news-box {
   border-right: 2px solid #bbc8ce;
