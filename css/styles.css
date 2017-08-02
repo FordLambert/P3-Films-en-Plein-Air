@@ -7300,9 +7300,10 @@ footer .link-section {
   margin-top: 15vh;
   min-height: 100vh;
 }
-.article-page section h1 {
+.article-page section h2 {
   color: #2580a6;
   font-size: 300%;
+  margin-top: 10vh;
 }
 .article-page section img {
   width: 100%;
