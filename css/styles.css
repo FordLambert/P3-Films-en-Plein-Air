@@ -7254,7 +7254,7 @@ footer .link-section {
 }
 /*----- NEWS PAGE ----- */
 .news-page header {
-  background-image: url(../pictures/tablet.jpg);
+  background-image: url(../pictures/contact.jpg);
 }
 .news-page .news-box {
   border-right: 2px solid #bbc8ce;
@@ -7289,7 +7289,7 @@ footer .link-section {
   /*this is for the progress bar when scrolling in an article*/
 }
 .article-page header {
-  background-image: url(../pictures/main-loutre.jpg);
+  background-image: url(../pictures/rotonde.jpg);
 }
 .article-page .navbar-inverse,
 .article-page .navbar,
